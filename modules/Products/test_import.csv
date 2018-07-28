@@ -1,0 +1,55 @@
+#FLAG|#name|#sku|#details|#price|#taxable|#status|#weight|#HIER|#CAT:travel|#CAT:mens|#CAT:ladies|#CAT:childrens|#FIELD:textbox:brand|#FIELD:textbox:nationality|#FIELD:textbox:sorting|#ATTRIBS
+||||||||||||||||
+P|Regular T Shirt|p0001|Quality Cotton T in Red|12.99|1|published|0.5|Clothing >> Shirts||1|1|1|brand1||1|Small:-1:p0001-s:5 -- Medium:-1:p0001-m:4 – Large:-1:p0001-l:3
+P|Long Sleeve Cotton|p0002|Quality Long Sleeve T in Blue|14.99|1|published|0.5|Clothing >> Shirts||1|1|1|brand1||2|Small:-1:p0001-s:5 -- Medium:-1:p0001-m:4 – Large:-1:p0001-l:3 – XL:-1:p0001-xl:0
+P|Winter Jacket|p0003|Nylon with cotton lining|34.99|1|published|1|Clothing >> Outerwear||1|1||brand2||3|Small:-1:p0001-s:5 -- Medium:-1:p0001-m:4 – Large:-1:p0001-l:3
+P|Fall Bomber Jacket|p0004|Bomber Style Jacket|29.99|1|published|1|Clothing >> Outerwear||1|1||brand2||4|Small:-1:p0001-s:5 -- Medium:-1:p0001-m:4 – Large:-1:p0001-l:3
+P|Heavy Winter Jacket|p0005|Nylon exterior, fur lined hood|58.99|1|published|1.5|Clothing >> Outerwear||1|1||brand3||5|Small:-1:p0001-s:5 -- Medium:-1:p0001-m:4 – Large:-1:p0001-l:3
+P|Toque 1|p0006|Cotton|5.99|1|published|0.25|Clothing >> Outerwear||1|1|1|brand4||6|
+P|Toque 2|p0006|Cotton|6.49|1|published|0.25|Clothing >> Outerwear||1|1|1|brand4||7|
+P|Hiking Boots|p0007|Great for those long mountain hikes|44.99|1|published|0.75|Clothing >> Footwear||1|1|1|brand5||8|
+P|Walking Shoes|p0008|Long walks down the road|24.99|1|published|0.75|Clothing >> Footwear||1|1||brand5||9|
+P|Snow Boots|p0009|Cnylon exterior, felt liner, removable|61.99|1|published|1.25|Clothing >> Footwear||1|1|1|brand6||10|
+||||||||||||||||
+P|Canadian Flag|p0010|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Canada|1|
+p|USA Flag|p0011|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|USA|2|
+P|UK Flag|p0012|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|UK|3|
+P|France Flag|p0013|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|France|4|
+P|German Flag|p0014|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Germany|5|
+P|Netherlands Flag|p0015|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Netherlands|6|
+P|UN Flag|p0016|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Organizations|1||||Flags R US||7|
+P|NATO Flag|p0017|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Organizations|1||||Flags R US||8|
+P|Belgium Flag|p0018|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Belgium|9|
+P|Mexico Flag|p0019|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Mexico|10|
+P|Chile Flag|p0020|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Chile|11|
+P|Columbia Flag|p0021|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Columbia|12|
+P|Italy Flag|p0022|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Italy|13|
+P|Spain Flag|p0023|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Spain|14|
+P|Greece Flag|p0024|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Greece|15|
+P|Isreal Flag|p0025|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Isreal|16|
+P|Australia Flag|p0026|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|Australia|17|
+P|New Zealand Flag|p0027|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations|1||||Flags R US|New Zealand|18|
+P|British Columbia Flag|p0028|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|19|
+P|Alberta Flag|p0029|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|20|
+P|Sasckatchewan Flag|p0030|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|21|
+P|Manitoba Flag|p0040|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|22|
+P|Ontario Flag|p0041|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|23|
+P|Quebec Flag|p0042|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|24|
+P|New Brunswick Flag|p0043|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|25|
+P|Newfoundland Flag|p0044|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|26|
+P|PEI Flag|p0045|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|27|
+P|Nova Scotia Flag|p0046|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|28|
+P|United Federation of Planets|p0047|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Novelty|||||||29|
+P|Nunavut Flag|p0048|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|30|
+P|Yukon Flag|p0049|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|31|
+P|Northwest Territories Flag|p0050|Nylon flag measures 36x24|9.95|1|published|0.25|Flags >> Nations >> Provinces|1||||Flags R US|Canada|32|
+||||||||||||||||
+P|Canada Mug Large|p0051|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|1|
+P|British Columbia Mug L|p0052|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|2|
+P|Alberta Mug Large|p0053|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|3|
+P|Sasckatchewan Mug Large|p0054|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|4|
+P|Manitoba Mug Large|p0055|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|5|
+P|Ontario Mug Large|p0056|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|6|
+P|Quebec Mug Large|p0057|Ceramic Mug holds 500ml|11.95|1|published|0.5|Souvenirs >> Mugs & Cups|1||||Canada Ceramics & Plastics Ltd|Canada|7|
+P|Canada Plate Large|p0059|Ceramic 12 inch plate|17.95|1|published|0.5|Souvenirs >> Plates|1||||Canada Ceramics & Plastics Ltd|Canada|8|
+P|Quebec Plate large|p0060|Ceramic 12 inch plate|17.95|1|published|0.5|Souvenirs >> Plates|1||||Canada Ceramics & Plastics Ltd|Canada|9|

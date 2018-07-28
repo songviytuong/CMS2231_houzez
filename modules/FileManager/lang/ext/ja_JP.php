@@ -1,0 +1,65 @@
+<?php
+$lang['actions']='アクション';
+$lang['bytes']='バイト';
+$lang['cancel']='キャンセル';
+$lang['confirmselected']='よろしいでしょうか?';
+$lang['confirmsingledelete']='よろしいですか?';
+$lang['delete']='削除';
+$lang['deleteselected']='選択されたファイルを削除します。';
+$lang['dirtreedeletecancelled']='ディレクトリの削除はキャンセルされました。';
+$lang['dirtreedeletesuccess']='ディレクトリに含まれるコンテンツは正常に削除されました。';
+$lang['enableadvanced']='上級操作モードを有効にしますか? (許可されている場合)';
+$lang['file']='ファイル';
+$lang['filedate']='日付';
+$lang['filedateformat']='月/日/年 時:分:秒';
+$lang['filedeletefail']='はエラーにより削除されません。';
+$lang['filedeletesuccess']='は正常に削除されました。';
+$lang['fileinfo']='ファイル情報';
+$lang['filename']='ファイル名';
+$lang['files']='ファイル';
+$lang['filesize']='サイズ';
+$lang['friendlyname']='ファイル管理';
+$lang['help']='		<h3>何ができるのでしょうか?</h3>
+		<p>このモジュールでファイル管理が行なえ、往来のビルドインさえｒたファイル管理機能に取って代わり利用できます。</p>
+		<h3>使用方法</h3>
+		<p>アドミンのコンテンツメニューから利用できます。往来のファイル管理が存在する為に注意が必要となりますが、一番下のファイル管理を選択してください。</p>';
+$lang['iconsize']='アイコンサイズ';
+$lang['imsure']='はい';
+$lang['installed']='ファイル管理バージョン%sがインストールされました。';
+$lang['kb']='キロバイト';
+$lang['largeicons']='大アイコン';
+$lang['mb']='メガバイト';
+$lang['newdirfail']='ディレクトリ作成時にエラーが発生しました。';
+$lang['newdirname']='新しいディレクトリを作成:';
+$lang['newdirsuccess']='ディレクトリは正常に作成されました。';
+$lang['nothinguploaded']='何もアップロードされていません。';
+$lang['packfileopenfail']='ファイルの展開ができません(サポートされないフォーマットの可能性?)';
+$lang['packfilewritefail']='ファイル&sに書き込めません。';
+$lang['permission']='ファイル管理モジュールを使用';
+$lang['permissionadvanced']='ファイル管理モジュールの高度な使用';
+$lang['postinstall']='ファイル管理モジュールがインストールされました。';
+$lang['really_uninstall']='ファイル管理モジュールのアンインストールされます。よろしいでしょうか?';
+$lang['settings']='設定';
+$lang['settingsconfirmsingledelete']='ファイルごとに削除を確認しますか?';
+$lang['settingssaved']='設定の保存';
+$lang['showhiddenfiles']='隠しファイルを表示';
+$lang['singledirdeletefail']='ディレクトリ削除時にエラーが発生しました(空でしょうか?)。';
+$lang['singledirdeletesuccess']='ディレクトリは正常に削除されました。';
+$lang['singlefiledeletefail']='ファイル削除時にエラーが発生しました。';
+$lang['singlefiledeletesuccess']='ファイルは正常に削除されました。';
+$lang['smallicons']='小アイコン';
+$lang['subdir']='サブディレクトリ';
+$lang['subdirs']='サブディレクトリ';
+$lang['uninstalled']='ファイル管理モジュールがアンインストールされました。';
+$lang['unpackafterupload']='アップロード後にファイルを展開しますか(tgzかzipファイルのみ)?';
+$lang['unpackfail']='次のエラーにより失敗: ';
+$lang['unpacksuccess']='は正常に展開されました。';
+$lang['upgraded']='ファイル管理モジュールがバージョン%sにアップグレードされました。';
+$lang['uploaderstandard']='標準htmlインプット方法(展開を許可)';
+$lang['uploadfail']='アップロードに失敗しました。';
+$lang['uploadfilesto']='次にファイルをアップロード:';
+$lang['uploadmethod']='アップロード方法';
+$lang['uploadnewfile']='新しいファイルをアップロード:';
+$lang['uploadsuccess']='正常にアップロードされました。';
+$lang['uploadview']='アップロードファイル';
+?>

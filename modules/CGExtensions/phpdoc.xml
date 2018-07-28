@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title><![CDATA[CGExtensions by calguy1000]]></title>
+  <parser>
+    <target>/tmp/CGExtensions.x</target>
+  </parser>
+  <transformer>
+    <target>docs/apidoc</target>
+  </transformer>
+  <files>
+    <directory>lib</directory>
+    <file>CGExtensions.module.php</file>
+    <ignore>lib/http/*</ignore>
+    <ignore>lib/internal/*</ignore>
+    <ignore>lib/jsmin.php</ignore>
+    <ignore>lib/class.CGDomDocument.php</ignore>
+    <ignore>lib/htmLawed.php</ignore>
+    <ignore>lib/class.cge_jshandler.php</ignore>
+    <ignore>lib/class.JSLikeHTMLElement.php</ignore>
+    <ignore>lib/class.Mail_mimeDecode.php</ignore>
+    <ignore>lib/class.Mail_RFC822.php</ignore>
+    <ignore>lib/Progress2_Lite.php</ignore>
+    <ignore>lib/class.POP3_Base.php</ignore>
+    <ignore>lib/class.internals.php</ignore>
+    <ignore>lib/class.Browser.php</ignore>
+    <ignore>lib/class.cge_smarty_plugins.php</ignore>
+  </files>
+</phpdoc>

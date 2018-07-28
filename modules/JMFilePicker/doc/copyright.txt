@@ -1,0 +1,51 @@
+The module uses external libaries and code snippets that are listed below:
+
+################################################################################
+
+jQuery JavaScript Library v1.4.2
+http://jquery.com/
+
+Copyright 2010, John Resig
+Dual licensed under the MIT or GPL Version 2 licenses.
+http://jquery.org/license
+
+Includes Sizzle.js
+http://sizzlejs.com/
+Copyright 2010, The Dojo Foundation
+Released under the MIT, BSD, and GPL Licenses.
+
+Date: Sat Feb 13 22:33:48 2010 -0500
+
+################################################################################
+
+jQuery Form Plugin
+version: 2.43 (12-MAR-2010)
+
+Examples and documentation at: http://malsup.com/jquery/form/
+Dual licensed under the MIT and GPL licenses:
+  http://www.opensource.org/licenses/mit-license.php
+  http://www.gnu.org/licenses/gpl.html
+
+################################################################################
+
+jQuery 'onImagesLoaded' plugin v1.1.1 (Updated January 27, 2010)
+Fires callback functions when images have loaded within a particular selector.
+
+Copyright (c) Cirkuit Networks, Inc. (http://www.cirkuit.net), 2008-2010.
+Dual licensed under the MIT and GPL licenses:
+   http://www.opensource.org/licenses/mit-license.php
+   http://www.gnu.org/licenses/gpl.html
+
+For documentation and usage see:
+http://www.cirkuit.net/projects/jquery/onImagesLoad/
+
+################################################################################
+
+The filepicker is based on a plugin of TinyMCE that comes by default with CMSms. 
+I'm not sure who actually is the author of the filepicker. 
+TinyMCE for CMSms is developed/maintained by Simon Brown, Stefan Röllin and Morten Poulsen.
+
+################################################################################
+
+And free icons found by http://www.iconfinder.com
+ 

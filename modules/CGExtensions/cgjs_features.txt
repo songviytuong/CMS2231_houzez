@@ -1,0 +1,42 @@
+For Site Developers
+  WHY:
+    Benefit of inline styling without the cost (css is concatendated, stored as one url, and cached by browser)
+    Benefit of inline js without the cost (js is minified, concatenated, stored as one url, and cached by browser)
+    keep relevant css code (small bits, and js code) with the html/smarty template.
+
+  - Dynamically include javascript
+    - from files
+    - from urls (to take advantage of CDN's)
+    - from libraries provided by modules
+    - from a block tag
+  - Dynamically include stylesheets
+    - from files
+    - from urls
+    - from libraries provided by modules
+    - from a block tag
+    - from a CMSMS stylesheet (CMSMS 2.0)
+
+  - Smart file finding
+  - Dependencies between libraries is automatic
+  - JS is conconcatenated in one file, and minimized (except for URLS)
+  - CSS is concatenated into one file, and minimized (except for URLS)
+  - cache lifetime
+  - option to disable minify
+  - option to exclude libraries
+  - less css
+
+  caveats:
+    - cgjs and cgcss methods have no effect when called via an ajax action (as render does not get called)
+
+For Programmers
+  - Create jquery plugins or other javascript libraries in modules
+  - register on install/upgrade of module
+  - unregister libraries on remove
+  - dependency management
+
+TODO:
+  - Get registered libraries function
+  - documentation
+  - replacement for {cms_stylesheet}
+  - less css
+  - add fetching of remote urls

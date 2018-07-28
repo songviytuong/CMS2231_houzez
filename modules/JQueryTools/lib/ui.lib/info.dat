@@ -1,0 +1,7 @@
+<?php
+$info['css'] = 'jquery-ui.min.css';
+$info['js'] = 'jquery-ui.min.js';
+$info['depends'] = 'jquery';
+$info['css_nominify'] = 1;
+$info['js_nominify'] = 1;
+?>

@@ -1,0 +1,6 @@
+<?php
+$info['js'] = array('jquery.fancybox.pack.js','jquery.mousewheel-3.0.6.pack.js');
+$info['depends'] = 'jquery';
+$info['css'] = 'jquery.fancybox.css';
+$info['js_nominify'] = 1;
+?>

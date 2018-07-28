@@ -1,0 +1,1 @@
+{$fielddef.name}: <a href="{$fielddef->GetImagePath(true)}/{$fielddef.value}">{$fielddef.value}</a>

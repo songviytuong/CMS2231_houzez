@@ -1,0 +1,6 @@
+<?php
+$info['js'] = array('jquery.tablesorter.min.js','jquery.metadata.js');
+#$info['css'] = 'themes/blue/style.css';
+$info['depends'] = 'jquery';
+$info['js_nominify'] = 1;
+?>

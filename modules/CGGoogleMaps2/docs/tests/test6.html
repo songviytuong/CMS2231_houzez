@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CGGM2 Map Test 6</title>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="//maps.google.com/maps/api/js?libraries=geometry&sensor=true"></script>
+  <script src="../../lib/js/infobox_packed.js"></script>
+  <script src="../../lib/js/map_tooltip.js"></script>
+  <script src="../../lib/js/jquery.cggm_map.js"></script>
+  <style type="text/css">
+    div.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div#map {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+    }
+    .infoBox {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid yellow;
+    }
+    .tooltip {
+      padding: 3px;
+      background-color: yellow;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+  $(function() {
+    var options = {
+      sensor: 1,
+      sensor_marker: 1,
+      sensor_icon: 'house',
+      directions: 1,
+      directions_draw: 1,
+      directions_panel: $('#directions').get(0),
+      icons: {
+         hotel: {
+           url: '../../icons/hotel.png'
+         },
+         house: {
+           url: '../../icons/house.png'
+         },
+         gas: {
+           url: '../../icons/gas.png'
+         },
+      },
+      markers: [
+        {
+          name: 'calgary',
+          title: 'Calgary, AB',
+          description: 'The home of the Calgary Stampede.<br/>The greatest outdoor show on earth!',
+          position: [ '51.045325','-114.058101' ],
+          icon: 'house'
+        },
+        {
+          name: 'edmonton',
+          title: 'Edmonton, AB',
+          description: 'The capitol of Alberta',
+          position: [ '53.5333','-113.5000' ],
+          icon: 'hotel'
+        },
+        {
+          name: 'reddeer',
+          title: 'Red Deer, AB',
+          description: 'they have another university here.',
+          position: [ '52.2681','-113.8111' ],
+          icon: 'gas'
+        }
+      ]
+    };
+    $('#map').cggm2(options);
+
+    $('#get_directions').click(function(){
+      var locations = ['__MYLOCATION__','edmonton'];
+      $('#map').cggm2('getDirections',locations);
+      return false;
+    });
+
+  });
+  </script>
+</head>
+<body>
+
+  <h1 style="text-align: center;">CGGM2 Map Test 6</h1>
+  <p style="text-align: center;">Simple directions test</p>
+  <div class="center">
+    <a href="#" id="get_directions">Directions to Edmonton</a>
+  </div>
+  <div id="map" class="center"></div>
+  <div id="directions" class="center"></div>
+
+</body>
+</html>

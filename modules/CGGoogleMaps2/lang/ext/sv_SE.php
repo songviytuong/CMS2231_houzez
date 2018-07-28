@@ -1,0 +1,108 @@
+<?php
+$lang['address'] = 'Adress';
+$lang['add_icon'] = 'L&auml;gg till Ikon';
+$lang['add_map'] = 'L&auml;gg till karta';
+$lang['add_map_point'] = 'L&auml;gg till kartpunkt';
+$lang['add_point_for_map'] = 'L&auml;gg till punkt till karta &quot;%s&quot;';
+$lang['anchor_x'] = 'Anchor X Pixel Location';
+$lang['anchor_y'] = 'Anchor Y Pixel Location';
+$lang['ask_delete_icon'] = '&Auml;r du s&auml;ker p&aring; att du vill ta bort den h&auml;r ikonen fr&aring;n listan (inga filer kommer raderas)';
+$lang['ask_reset_icons'] = 'Are you sure you want to remove all icons, and reset to factory defaults?';
+$lang['cancel'] = 'Avbryt';
+$lang['center_lat'] = 'Centrera latitud';
+$lang['center_lon'] = 'Centrera longitud';
+$lang['changelog'] = '<ul>
+<li>1.0 - December, 2007
+  <p>Initial utg&aring;va</p>
+</li>
+<li>1.1 - Juli, 2008
+  <p>Tillagt {cggm_add_dynpoint} smarty till&auml;gg f&ouml;r att skapa dynamiska punkter i kartan via smarty.</p>
+</li>
+</ul>';
+$lang['click'] = 'Klicka';
+$lang['controls'] = 'Kontroller';
+$lang['controls_size'] = 'Storlek p&aring; kontroller';
+$lang['default'] = 'F&ouml;rvalt';
+$lang['default_templates'] = 'Standardmallar';
+$lang['delete'] = 'Radera';
+$lang['delete_icon'] = 'Radera den h&auml;r ikonen';
+$lang['delete_map'] = 'Ta bort karta';
+$lang['delete_map_point'] = 'Ta bort kartpunkt';
+$lang['description'] = 'Beskrivning';
+$lang['directions'] = 'Visa riktningar';
+$lang['edit'] = 'Redigera';
+$lang['edit_icon'] = 'Redigera den h&auml;r ikonen';
+$lang['edit_map'] = 'Redigera karta';
+$lang['edit_map_point'] = 'Redigera kartpunkt';
+$lang['edit_map_points'] = 'Redigera kartpunkter';
+$lang['edit_points_for_map'] = 'Redigera punkter f&ouml;r karta &quot;%s&quot;';
+$lang['error_cannotdelete'] = 'This item cannot be removed';
+$lang['error_invalidparams'] = 'En eller flera parametrar saknas eller &auml;r ogiltiga';
+$lang['error_nameexists'] = 'An item by that name already exists';
+$lang['error_noapikey'] = 'Google API-nyckeln &auml;r tom';
+$lang['error_noapikey2'] = 'The Google API Key is empty.  This module will not function properly until it is set with a valid value as supplied by google.';
+$lang['error_notfound'] = 'The requested item could not be found';
+$lang['error_permissiondenied'] = 'Du har inte de r&auml;ttigheter som kr&auml;vs f&ouml;r den h&auml;r handlingen';
+$lang['friendlyname'] = 'Calguys GoogleMaps';
+$lang['google_api_key'] = 'Google API-nyckel';
+$lang['height'] = 'H&ouml;jd';
+$lang['help_anchor_location'] = '<strong>Note:</strong>&nbsp;Anchor locations specify the pixel location (relative to the top left corner of thie image) where the icon should be anchored to the marker.  If no value is specified, the center of the icon will be used';
+$lang['help_icon_url'] = 'Specify the URL to the pre-uploaded PNG image.  This image should not be larger than 32x32, and should support transparency.  The URL can usually be specified relative to the root of your installation';
+$lang['help_param_defer'] = 'Specify that all javascript tags should have the defer attribute set.  This may be useful for problems with IE7 and IE8 where Internet explorer tries to execute javascript on an incompletely rendered page.';
+$lang['help_param_map'] = 'Specify the ID or map name to use for laying out the google map.  If this parameter is not specified, the default map (if any) is used.';
+$lang['help_param_maptemplate'] = 'Specify the name of an existing, non default map template to use for this output.  If this parameter is not specified, the current default map template will be used';
+$lang['hybrid'] = 'Hybrid';
+$lang['id'] = 'ID';
+$lang['icon'] = 'Ikon';
+$lang['info_address_latlong'] = 'Notis: Ange<strong>antingen</strong> en adress <strong>eller</strong> latitud och longitud. Latitud och longitud ges f&ouml;retr&auml;de om  du anger b&aring;de adress och koordinater.';
+$lang['info_anchor_x'] = 'Info Window Anchor X Pixel Location';
+$lang['info_anchor_y'] = 'Info Window Anchor Y Pixel Location';
+$lang['info_sysdflt_map_template'] = 'System Default map template';
+$lang['info_sysdflt_template'] = 'This form provides the ability to specify the content that will be displayed when you create a new template of this type.  Editing the content in this form will have no immediate effect on your website';
+$lang['info_window'] = 'Visa informationsf&ouml;nster';
+$lang['info_trigger'] = 'Info WindowTrigger';
+$lang['large'] = 'Stor';
+$lang['latitude'] = 'Latitud';
+$lang['latlong'] = 'Latitude / Longitude';
+$lang['location'] = 'Plats';
+$lang['longitude'] = 'Longitud';
+$lang['make_default'] = 'Make this icon the default icon';
+$lang['marker_icons'] = 'Marker Icons';
+$lang['map'] = 'Karta';
+$lang['maps'] = 'Kartor';
+$lang['maptemplate_addedit'] = 'L&auml;gg till/Redigera Kartmall';
+$lang['map_name'] = 'Kartnamn';
+$lang['map_templates'] = 'Kartmallar';
+$lang['moddescription'] = 'En enkel modul f&ouml;r att skapa Google-kartor';
+$lang['mouseover'] = 'Mus&Ouml;ver';
+$lang['msg_default_icon_uchanged'] = 'Standardikonen har blivit &auml;ndrad';
+$lang['msg_icons_reset'] = 'Icons have been reset to factory default settings';
+$lang['msg_icon_removed'] = 'Ikon borttagen fr&aring;n databasen. Inga filer raderas.';
+$lang['msg_icon_updated'] = 'Ikon information &auml;ndrad.';
+$lang['name'] = 'Namn';
+$lang['points'] = 'Punkter';
+$lang['point_name'] = 'Punktnamn';
+$lang['point_type'] = 'Point Type';
+$lang['postinstall'] = 'Modulen CGGoogleMaps har installerats';
+$lang['postuninstall'] = 'Modulen CGGoogleMaps och relaterat data har tagits bort';
+$lang['preferences'] = 'Inst&auml;llningar';
+$lang['really_uninstall'] = '&Auml;r du s&auml;ker p&aring; att du vill ta bort den h&auml;r modulen?';
+$lang['reset_icons'] = '&Aring;terst&auml;ll ikoner';
+$lang['satellite'] = 'Satellit';
+$lang['set_dflt_map'] = 'S&auml;tt som f&ouml;rvald karta';
+$lang['sidebar'] = 'Visa sidostapel';
+$lang['small'] = 'Liten';
+$lang['submit'] = 'Skicka';
+$lang['text'] = 'Text';
+$lang['type'] = 'Typ';
+$lang['type_controls'] = 'Visa typkontroller';
+$lang['url'] = 'URL';
+$lang['width'] = 'Bredd';
+$lang['zoom'] = 'Zoom-niv&aring;';
+$lang['zoom_encompass'] = 'Zoom-Omfatta';
+$lang['qca'] = 'P0-1231872325-1269359321195';
+$lang['utma'] = '156861353.1269777603.1269359342.1269359342.1269359342.1';
+$lang['utmb'] = '156861353.1.10.1269359342';
+$lang['utmc'] = '156861353';
+$lang['utmz'] = '156861353.1269359342.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=cmsms';
+?>

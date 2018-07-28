@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CGGM2 Map Test 3</title>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="//maps.google.com/maps/api/js?libraries=geometry&amp;sensor=true"></script>
+  <script src="../../lib/js/infobox_packed.js"></script>
+  <script src="../../lib/js/map_tooltip.js"></script>
+  <script src="../../lib/js/jquery.cggm_map.js"></script>
+  <style type="text/css">
+    div.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div#controls {
+      width: 25%;
+      float: left;
+    }
+    div#map {
+      width: 500px;
+      height: 500px;
+      float: left;
+      border: 1px solid black;
+    }
+    .infoBox {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid yellow;
+    }
+    .tooltip {
+      padding: 3px;
+      background-color: yellow;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+  $(function() {
+    var options = {
+      type_controls: 0,
+      icons: {
+         house: {
+           url: '../../icons/house.png'
+         },
+         hotel: {
+           url: '../../icons/hotel.png'
+         },
+         gas: {
+           url: '../../icons/gas.png'
+         },
+      },
+      markers: [
+        {
+          name: 'calgary',
+          title: 'Calgary, AB',
+          description: 'The home of the Calgary Stampede.<br/>The greatest outdoor show on earth!',
+          position: [ '51.045325','-114.058101' ],
+          icon: 'house'
+        },
+        {
+          name: 'edmonton',
+          title: 'Edmonton, AB',
+          description: 'The capitol of Alberta',
+          position: [ '53.5333','-113.5000' ],
+          icon: 'hotel'
+        },
+        {
+          name: 'reddeer',
+          title: 'Red Deer, AB',
+          description: 'they have another university here.',
+          position: [ '52.2681','-113.8111' ],
+          icon: 'gas'
+        }
+      ]
+    };
+    $('#map').cggm2(options);
+
+  $('#addpoint1').click(function(){
+    // get the marker with the name 'test'
+    var test_marker = $('#map').cggm2('getMarker','test');
+    if( !test_marker ) {
+      // if we cannot get it, we add it.
+      test_marker = {
+        name: 'test',
+        title: 'A test marker',
+        description: 'The capital of British Columbia',
+        position: [ '49.2500', '-123.1000']
+      };
+      $('#map').cggm2('addMarker',test_marker);
+    }
+  });
+
+  $('#showinfo1').click(function(){
+    var test_marker = $('#map').cggm2('getMarker','test');
+    if( test_marker ) {
+      $('#map').cggm2('showInfoWindow','test');
+    }
+  });
+
+  $('#removepoint1').click(function(){
+    // get the marker with the name 'test'
+    var test_marker = $('#map').cggm2('getMarker','test');
+    if( test_marker ) {
+      // if we get it... remove it
+      $('#map').cggm2('removeMarker','test');
+    }
+  });
+
+  $('#addpoint2').click(function(){
+    // get the marker with the name 'test2'
+    var test_marker = $('#map').cggm2('getMarker','test2');
+    if( !test_marker ) {
+      // if we cannot get it, we add it.
+      test_marker = {
+        name: 'test2',
+        title: 'A second test marker (Halifax)',
+        position: [ '44.6478', '-63.5714']
+      };
+      $('#map').cggm2('addMarker',test_marker);
+    }
+  });
+
+  $('#panpoint2').click(function(){
+    var test_marker = $('#map').cggm2('getMarker','test2');
+    if( test_marker ) {
+      $('#map').cggm2('panToMarker','test2');
+    }
+  })
+
+  $('#removepoint2').click(function(){
+    // get the marker with the name 'test2'
+    var test_marker = $('#map').cggm2('getMarker','test2');
+    if( test_marker ) {
+      // if we get it... remove it
+      $('#map').cggm2('removeMarker','test2');
+    }
+  });
+
+  $('#removeall').click(function(){
+    // remove all markers
+    $('#map').cggm2('removeAllMarkers');
+  });
+
+  $('#zoomencompass').click(function(){
+    // zoom out to all markers
+    $('#map').cggm2('option','zoom_encompass',1);
+  });
+});
+  </script>
+</head>
+<body>
+
+  <h1 style="text-align: center;">CGGM2 Map Test 3</h1>
+  <p style="text-align: center;">Test dynamically adding and removing markers, getting options, and setting options.</p>
+  <div class="center">
+    <div id="controls">
+      <a href="#" id="addpoint1">Add Test Marker 1</a><br/>
+      <a href="#" id="showinfo1">Show Infowindow for Marker 1</a><br/>
+      <a href="#" id="removepoint1">Remove Test Marker 1</a><br/><br/>
+      <a href="#" id="addpoint2">Add Test Marker 2</a><br/>
+      <a href="#" id="panpoint2">Pan to Test Marker 2</a><br/>
+      <a href="#" id="removepoint2">Remove Test Marker 2</a><br/><br/>
+      <a href="#" id="removeall">Remove all Markers</a><br/>
+      <a href="#" id="zoomencompass">Zoom Encompass</a>
+    </div>
+    <div id="map"></div>
+  </div>
+
+</body>
+</html>

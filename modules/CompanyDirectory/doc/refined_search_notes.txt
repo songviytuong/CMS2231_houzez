@@ -1,0 +1,18 @@
+1.  Set the searchkey parameter in the page, before {content} is called.
+    * note if summary view is on different page than search form, set this variable on both pages
+    {cge_module_hint module=CompanyDirectory searchkey='something'}
+
+2.  Set the summarytemplate parameter in the page, before {content} is called.
+    {cge_module_hint module=CompanyDirectory summarytemplate='something'}
+
+3.  Call {CompanyDirectory action=search} to display the search form
+
+4.  In summary template, create a new form
+    <form method="POST" action="{module_action_link module=CompanyDirectory action=default urlonly=1}">
+    ...
+    </form>
+    a: assume cntnt01 for the 'id'... so prefix all element names that represent CD parameters with 'cnnt01'
+    b: build the form, name of all elements should match CD parameter names (with the prefix).
+       i.e:  <input type="text" name="cntnt01name"/>
+
+    

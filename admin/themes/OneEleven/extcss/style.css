@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2017, 2:23:40 PM
+    Author     : Lipit
+*/
+body,
+table.pagetable,
+.warning p, .pagewarning p, .message p,
+div.pagecontainer legend,
+input, textarea, select, menu,
+p
+{
+    font-size:13px;
+}
+div.pagecontainer .pagetext{
+    font-weight: normal;
+}
+header .admin-title {
+    text-align: right;
+    max-width: 70%;
+    overflow: hidden;
+    display: inline-block;
+    height: 70px;
+    font: bold 12px/70px sans-serif;
+    margin-right: 20px;
+    color: #000000;
+    text-shadow: 1px 1px 0 #fff;
+    float: right;
+}
+
+#oe_mainarea header.pageheader h1 {
+    font-size: 14px;
+}
+
+#login .logo {
+	width: 180px;
+	height: 36px;
+	position: absolute;
+	right: -90px;
+	top: -30px
+}
+
+#login .logo img{
+    border-radius: 50%;
+    box-shadow: #999 0 0 6px;
+}
+
+header .cms-logo {
+	height: 60px;
+	padding-top: 2px;
+	float: right;
+	padding-right:10px;
+}
+header .cms-logo:hover{
+	padding-top: 4px;
+}
+
+header .cms-logo img {
+    border-radius: 50%;
+    box-shadow: #ccc 0 0 2px;
+}
+
+.dashboard-box ul.subitems li a {
+    font-size: 90%;
+    text-decoration: none;
+}
+
+.message, .pagewarning, .pagemcontainer, .pageerrorcontainer, .pageerrorinstalldir, .green, .red, .yellow, .warning, .information
+{
+    font-size: 12px;
+}
+
+
+
+
+#oe_container.sidebar-off .footer-left {
+    margin:0px;
+}
+@media screen and (max-width: 768px){
+    .dashboard-box {width: 100%;}
+    #oe_footer .footer-left {
+        margin:0px;
+    }
+
+}
+

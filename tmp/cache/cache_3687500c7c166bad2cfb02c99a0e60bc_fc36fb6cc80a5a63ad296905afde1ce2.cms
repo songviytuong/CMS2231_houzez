@@ -1,0 +1,253 @@
+__SERIALIZED__a:225:{s:8:"sitemask";s:16:"2203897704d234e5";s:15:"sitedownmessage";s:45:"<p>Site is currently down for maintenance</p>";s:8:"metadata";s:5746:"{strip}
+{if $CustomGS.slogan_content}
+	{assign var="slogan_content" value="{$CustomGS.slogan_content}" scope="global"}
+{else}
+	{assign var="slogan_content" value="The Official Website" scope="global"}
+{/if}
+{if $CustomGS.site_name}
+	{assign var="site_name" value="{$CustomGS.site_name}" scope="global"}
+{else}
+	{assign var="site_name" value="{sitename}" scope="global"}
+{/if}
+{if isset($pagetitle) && !empty($pagetitle)}
+<title>{if $CustomGS.slogan_active != 1}{$pagetitle} - {$site_name}{else}{$pagetitle} - {$site_name} | {$slogan_content}{/if}</title>
+{elseif isset($meta_title) && !empty($meta_title)}
+<title>{$meta_title}</title>
+{else}
+<title>{if $page_alias=='home' || $page_alias=='under-construction'}{$site_name} | {$slogan_content}{else}{title} - {$site_name} | {$slogan_content}{/if}</title>
+{/if}
+{/strip}<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" href="{root_url}/favicon.ico" />
+<meta name="Generator" content="Lee Peace"/>
+<meta http-equiv="Expires" content="0"/>
+<meta name="Resource-type" content="Document"/>
+<meta name="Language" content="Vietnamese, English"/>
+<meta name="Keywords" content="{if !empty($meta_keywords)}{$meta_keywords}{else}{$CustomGS.meta_keywords}{/if}"/>
+<meta name="Description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}"/>
+<meta name="Identifier-URL" content="{root_url}" />
+<meta name="Original-source" content="{if isset($canonical)}{$canonical}{elseif isset($content_obj)}{$content_obj->GetURL()}{/if}" />
+<link href="{if $page_alias=="product-detail"}{root_url}/{$smarty.get.page}{elseif isset($canonical)}{$canonical}{elseif isset($content_obj)}{$content_obj->GetURL()}{/if}" rel="canonical"/>
+<meta name="Revised" content="{modified_date format="%d/%m/%Y - %H:%M:%S"}" />
+<meta name="Robots" content="index, follow"/>
+<meta name="Revisit-After" content="1 days"/>
+<meta name="Rating" content="search engine optimization"/>
+<meta name="Copyright" content="{$CustomGS.copyright|default:'Webmaster Designer by songviytuong'}"/>
+<meta name="Distribution" content="Global"/>
+<meta name="Classification" content="Seo"/>
+<link rel="author" href="{$CustomGS.google_plus}" />
+<!--Lee Peace-->
+<!-- Social: Facebook -->
+{if $page_alias=='home' || $page_alias=='under-construction'}<meta property="og:url" content="{root_url}"/>{else}<meta property="og:url" content="{get_current_url}"/>{/if}
+<meta name="format-detection" content="telephone=yes">
+<meta property="og:type" content="website" /> 
+<meta property="og:image" content="{if !empty($meta_image) && !empty($meta_image)}{$meta_image}{else}{uploads_url}/{$CustomGS.meta_image}{/if}"/>
+<meta property="og:title" content="{if $page_alias=='home' || $page_alias=='under-construction'}{$site_name} | {$slogan_content}{elseif isset($meta_title) && !empty($meta_title)}{$meta_title}{else}{title} - {$site_name} | {$slogan_content}{/if}"/>
+<meta property="og:description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}"/>
+<meta property="og:site_name" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{else}{$site_name} | {$slogan_content}{/if}"/>
+<meta property="fb:app_id" content="{$CustomGS.app_id_facebook}" /> 
+<!-- End Social: Facebook -->
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="{$CustomGS.twittercard}">
+<meta name="twitter:site" content="{$CustomGS.twittersite}">
+<meta name="twitter:creator" content="{$CustomGS.twittercreator}">
+{if $page_alias=='home' || $page_alias=='under-construction'}
+<meta name="twitter:url" content="{root_url}" />
+{else}
+<meta name="twitter:url" content="{get_current_url}" />
+{/if}
+<meta name="twitter:title" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{elseif isset($meta_title) && !empty($meta_title)}{$meta_title}{else}{$site_name} | {$slogan_content}{/if}">
+<meta name="twitter:description" content="{if !empty($meta_description)}{$meta_description|strip|truncate:'160':"":false}{else}{$CustomGS.meta_description|strip|truncate:'160':"":false}{/if}">
+<meta name="twitter:image:src" content="{if !empty($meta_image) && !empty($meta_image)}{$meta_image}{else}{root_url}/images/twitter.jpg{/if}">
+<!-- End Social: Twitter -->
+<meta itemprop="ratingValue" content="" />
+<meta itemprop="ratingCount" content="" />
+<meta itemprop="price" content="" />
+
+<link href="{root_url}/images/touch-icons/touch-icon-ipad.png" rel="apple-touch-icon" sizes="76X76"/>
+<link href="{root_url}/images/touch-icons/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+<link href="{root_url}/images/touch-icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="{root_url}/images/touch-icons/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="120X120"/>
+<link href="{root_url}/images/touch-icons/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="152X152"/>
+
+<meta name="idev" content="{$site_name}"/>
+<meta name="dcterms.title" content="{if !empty($pagetitle)}{$pagetitle} | {$site_name}{else}{$site_name} | {$slogan_content}{/if}"/>
+<meta name="dcterms.creator" content="{$site_name}"/>
+<meta name="dcterms.type" content="Text"/>
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />";s:16:"default_lang_mle";s:5:"en_US";s:50:"LISESEO_mapi_pref_liseseo_default_summary_template";s:7:"default";s:12:"global_umask";s:3:"022";s:20:"auto_clear_cache_age";s:2:"60";s:17:"adminlog_lifetime";s:7:"2678400";s:19:"allow_browser_cache";s:1:"1";s:20:"browser_cache_expiry";s:2:"60";s:8:"sitename";s:27:"Lipit v2.2.3.1 &#45; v2.2.5";s:39:"CMSContentManager_mapi_pref_locktimeout";s:2:"60";s:39:"CMSContentManager_mapi_pref_lockrefresh";s:3:"120";s:36:"DesignManager_mapi_pref_lock_timeout";s:2:"60";s:36:"DesignManager_mapi_pref_lock_refresh";s:3:"120";s:34:"FileManager_mapi_pref_advancedmode";s:1:"0";s:30:"FileManager_mapi_pref_iconsize";s:4:"32px";s:37:"FileManager_mapi_pref_showhiddenfiles";s:1:"0";s:36:"FileManager_mapi_pref_showthumbnails";s:1:"1";s:37:"FileManager_mapi_pref_permissionstyle";s:3:"xxx";s:35:"LISESlider_mapi_pref_extra3_enabled";s:1:"0";s:32:"LISESEO_mapi_pref_extra1_enabled";s:1:"0";s:31:"LISESlider_mapi_pref_sent_email";s:1:"0";s:33:"LISESlider_mapi_pref_time_control";s:1:"0";s:35:"LISESlider_mapi_pref_extra1_enabled";s:1:"0";s:35:"LISESlider_mapi_pref_extra2_enabled";s:1:"0";s:41:"ModuleManager_mapi_pref_module_repository";s:58:"https://www.cmsmadesimple.org/ModuleRepository/request/v2/";s:28:"News_mapi_pref_email_subject";s:32:"Un nouvel article a été posté";s:35:"News_mapi_pref_allowed_upload_types";s:16:"gif,png,jpeg,jpg";s:37:"News_mapi_pref_auto_create_thumbnails";s:16:"gif,png,jpeg,jpg";s:26:"Search_mapi_pref_stopwords";s:706:"i, me, my, myself, we, our, ours, ourselves, you, your, yours, yourself, yourselves, he, him, his, himself, she, her, hers, herself, it, its, itself, they, them, their, theirs, themselves, what, which, who, whom, this, that, these, those, am, is, are, was, were, be, been, being, have, has, had, having, do, does, did, doing, a, an, the, and, but, if, or, because, as, until, while, of, at, by, for, with, about, against, between, into, through, during, before, after, above, below, to, from, up, down, in, out, on, off, over, under, again, further, then, once, here, there, when, where, why, how, all, any, both, each, few, more, most, other, some, such, no, nor, not, only, own, same, so, than, too, very";s:47:"SitemapMgr_mapi_pref_updatesitemapstask_lastrun";s:10:"1516168416";s:40:"SitemapMgr_mapi_pref_sitemapmgr_firstrun";s:4:"true";s:28:"Search_mapi_pref_usestemming";s:5:"false";s:27:"Search_mapi_pref_searchtext";s:15:"Enter Search...";s:39:"CmsJobManager_mapi_pref_tasks_lastcheck";s:10:"1516214799";s:22:"ClearCache_lastexecute";s:10:"1516168411";s:42:"CmsJobManager_mapi_pref_last_async_trigger";s:10:"1516215189";s:39:"CmsJobManager_mapi_pref_last_badjob_run";s:10:"1516214229";s:38:"CGExtensions_mapi_pref_imageextensions";s:11:"jpg,png,gif";s:20:"CmsSecurityCheckTask";s:10:"1516168411";s:19:"CmsVersionCheckTask";s:10:"1516168412";s:25:"PruneAdminlog_lastexecute";s:10:"1516168415";s:26:"ReduceAdminlog_lastexecute";s:10:"1516206691";s:28:"News_mapi_pref_task1_lastrun";s:10:"1516214800";s:36:"CGExtensions_mapi_pref_thumbnailsize";s:2:"75";s:37:"CGExtensions_mapi_pref_watermark_text";s:9:"CMS 2.2.1";s:41:"CGExtensions_mapi_pref_watermark_textsize";s:2:"12";s:38:"CGExtensions_mapi_pref_watermark_angle";s:1:"0";s:37:"CGExtensions_mapi_pref_watermark_font";s:9:"ARIAL.TTF";s:40:"CGExtensions_mapi_pref_watermark_bgcolor";s:7:"#FFFFFF";s:42:"CGExtensions_mapi_pref_watermark_textcolor";s:7:"#000000";s:44:"CGExtensions_mapi_pref_watermark_transparent";s:1:"1";s:57:"CGExtensions_mapi_pref_dflt_sortablelist_template_content";s:3327:"{* sortable list template *}
+<style type="text/css" scoped>
+ul.sortable_selected {
+  min-height: 10em;
+  max-height: 20em;
+  overflow-y: auto;
+  border: 1px solid green;
+}
+ul.sortable_master {
+  min-height: 10em;
+  max-height: 20em;
+  overflow-y: auto;
+  border: 1px solid blue;
+}
+.sortable_list td {
+  text-align: center;
+}
+.sortable_list ul {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  padding-right: 10px;
+  text-align: left;
+}
+.sortable_list ul li {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: move;
+}
+</style>
+
+<script type='text/javascript'>
+function sortable_list(_container) {
+    var container, selected, master, value_fld;
+
+    container = _container;
+    var element_name = container.attr('id');
+    selected = $('ul.sortable_selected',container);
+    master = $('ul.sortable_master',container);
+    var sel = 'input[name="'+element_name+'"]';
+    value_fld = $(sel,container);
+
+    var h = Math.max(master.height(),selected.height());
+    var w = Math.max(master.width(),selected.width());
+    selected.height(h); master.height(h);
+    if( w > 0 ) {
+        selected.width(w); master.width(w);
+    }
+    selected.sortable({
+       connectWith: master,
+       update: function( ev, ui ) {
+          console.debug('in selectted update');
+          if( {$max_selected} > 0 && $('li',this).length > {$max_selected} ) {
+             $(ui.sender).sortable('cancel');
+          }
+          else {
+	     var sel = [];
+	     $('li',this).each(function(){
+	        var key = $(this).data('key');
+		sel.push(key);
+	     });
+	     value_fld.val(sel.join());
+          }
+       }
+    });
+    master.sortable({
+       connectWith: selected
+    });
+};
+
+$(document).ready(function(){
+   var cont = $('#{$selectarea_prefix}');
+   var my_sortable_list = new sortable_list(cont);
+});
+</script>
+
+{* note: $selectarea_prefix contains the name of the input element that must exist/be created on form submit.
+         On submission of the form, this field must contain a comma separated list of the currently selected keys.
+         $selectarea_selected is an associative array of keys and values representing the currently selected item.
+	 $selectarea_selected_str is a string consisting of a comma separated list of currently selected keys.
+*}
+<div class="sortable_list" id="{$selectarea_prefix}">
+  <table>
+  <tr>
+    <td>{$label_left}</td>
+    <td>{$label_right}</td>
+  </tr>
+  <tr>
+    <td valign="top">
+      {* left column - for the selected items *}
+      <ul class="sortable_selected" title="{$cge->Lang('sortablelist_selectlist')}">
+      {if isset($selectarea_selected)}
+        {foreach $selectarea_selected as $key => $val}
+          <li data-key="{$key}">{$val}</li>
+        {/foreach}
+      {/if}
+      </ul>
+    </td>
+    <td valign="top">
+      {* right column - for the master list *}
+      <ul class="sortable_master" title="{$cge->Lang('sortablelist_masterlist')}">
+      {foreach $selectarea_masterlist as $key => $val}
+        {if !isset($selectarea_selected) || !isset($selectarea_selected[$key])}
+          <li data-key="{$key}">{$val}</li>
+	{/if}
+      {/foreach}
+      </ul>
+    </td>
+  </tr>
+  </table>
+  <input type="hidden" class="sortable_val" name="{$selectarea_prefix}" value="{$selectarea_selected_str}"/>
+</div> {* .sortable_list *}
+";s:49:"CGExtensions_mapi_pref_dflt_sortablelist_template";s:6:"Sample";s:33:"cf669c2c49b7eeaf80506380723ea25f6";s:5417:"a:15:{s:8:"cg_cmsms";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:2:{s:4:"name";s:8:"cg_cmsms";s:8:"callback";a:2:{i:0;s:13:"cge_jshandler";i:1;s:4:"load";}}}s:6:"cgform";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:6:"cgform";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:64:"{$root_path}\modules\JQueryTools/lib/cgform.lib/jquery.cgform.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:7:"cluetip";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:7:"cluetip";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:3:{i:0;s:74:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/lib/jquery.hoverIntent.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/lib/jquery.bgiframe.min.js";i:2;s:70:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/jquery.cluetip.min.js";}s:7:"cssfile";a:1:{i:0;s:67:"{$root_path}\modules\JQueryTools/lib/cluetip.lib/jquery.cluetip.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:8:"combobox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:8:"combobox";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:75:"{$root_path}\modules\JQueryTools/lib/combobox.lib/jquery.custom-combobox.js";}s:7:"depends";a:1:{i:0;s:2:"ui";}}}s:8:"fancybox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:8:"fancybox";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:73:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.fancybox.pack.js";i:1;s:81:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.mousewheel-3.0.6.pack.js";}s:7:"cssfile";a:1:{i:0;s:69:"{$root_path}\modules\JQueryTools/lib/fancybox.lib/jquery.fancybox.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:10:"fileupload";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:10:"fileupload";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:2:{i:0;s:81:"{$root_path}\modules\JQueryTools/lib/fileupload.lib/js/jquery.iframe-transport.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/fileupload.lib/js/jquery.fileupload.js";}s:7:"depends";a:2:{i:0;s:6:"jquery";i:1;s:2:"ui";}}}s:4:"form";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:4:"form";s:6:"module";s:11:"JQueryTools";s:6:"jsfile";a:1:{i:0;s:60:"{$root_path}\modules\JQueryTools/lib/form.lib/jquery.form.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:6:"jquery";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:6:"jquery";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/jquery.lib/jquery-1.11.3.min.js";i:1;s:75:"{$root_path}\modules\JQueryTools/lib/jquery.lib/jquery-migrate-1.2.1.min.js";}}}s:11:"jquerytools";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:4:{s:4:"name";s:11:"jquerytools";s:6:"module";s:11:"JQueryTools";s:7:"cssfile";a:1:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/jquerytools.lib/JQueryTools.css";}s:7:"depends";a:1:{i:0;s:11:"tablesorter";}}}s:4:"json";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:4:"json";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:68:"{$root_path}\modules\JQueryTools/lib/json.lib/jquery.json-2.4.min.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:7:"jsviews";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:7:"jsviews";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:63:"{$root_path}\modules\JQueryTools/lib/jsviews.lib/jsviews.min.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:8:"lightbox";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:6:{s:4:"name";s:8:"lightbox";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:76:"{$root_path}\modules\JQueryTools/lib/lightbox.lib/jquery.lightbox-0.5.min.js";}s:7:"cssfile";a:1:{i:0;s:77:"{$root_path}\modules\JQueryTools/lib/lightbox.lib/css/jquery.lightbox-0.5.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:11:"tablesorter";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:5:{s:4:"name";s:11:"tablesorter";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:6:"jsfile";a:2:{i:0;s:78:"{$root_path}\modules\JQueryTools/lib/tablesorter.lib/jquery.tablesorter.min.js";i:1;s:71:"{$root_path}\modules\JQueryTools/lib/tablesorter.lib/jquery.metadata.js";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:2:"ui";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:7:{s:4:"name";s:2:"ui";s:6:"module";s:11:"JQueryTools";s:11:"js_nominify";b:1;s:12:"css_nominify";b:1;s:6:"jsfile";a:1:{i:0;s:60:"{$root_path}\modules\JQueryTools/lib/ui.lib/jquery-ui.min.js";}s:7:"cssfile";a:1:{i:0;s:61:"{$root_path}\modules\JQueryTools/lib/ui.lib/jquery-ui.min.css";}s:7:"depends";a:1:{i:0;s:6:"jquery";}}}s:13:"cg_datepicker";O:29:"CGExtensions\jsloader\libdefn":1:{s:36:" CGExtensions\jsloader\libdefn _data";a:2:{s:4:"name";s:13:"cg_datepicker";s:8:"callback";s:36:"\JQueryTools\datepicker_plugin::load";}}}";s:42:"CustomGS_mapi_pref_input_custom_modulename";s:8:"Settings";s:62:"CGExtensions_mapi_pref_cgeint_49e8055daa9a399136bbb14008b4a7d4";s:10:"1503765691";s:12:"frontendlang";s:5:"en_US";s:15:"frontendwysiwyg";s:7:"TinyMCE";s:10:"logintheme";s:9:"OneEleven";s:14:"backendwysiwyg";s:0:"";s:17:"defaultdateformat";s:0:"";s:15:"thumbnail_width";s:2:"96";s:16:"thumbnail_height";s:2:"96";s:12:"searchmodule";s:6:"Search";s:19:"xmlmodulerepository";s:0:"";s:12:"checkversion";s:1:"1";s:12:"lock_timeout";s:2:"60";s:33:"CGSmartImage_mapi_pref_embed_mode";s:9:"sizelimit";s:33:"CGSmartImage_mapi_pref_embed_size";s:2:"32";s:33:"CGSmartImage_mapi_pref_embed_type";s:11:"png,jpg,gif";s:44:"CGSmartImage_mapi_pref_image_url_hascachedir";s:1:"0";s:32:"CGSmartImage_mapi_pref_cache_age";s:1:"0";s:33:"CGSmartImage_mapi_pref_responsive";s:1:"1";s:34:"CGSmartImage_mapi_pref_progressive";s:1:"1";s:30:"CGSmartImage_mapi_pref_aliases";s:109:"a:1:{i:0;a:2:{s:4:"name";s:13:"std_thumbnail";s:7:"options";s:39:"filter_watermark=1 width=150 height=150";}}";s:30:"CGGoogleMaps2_mapi_pref_apikey";s:39:"AIzaSyDefxj8UxYRvKODp9fiErghXY9AEjQb80M";s:61:"JQueryTools_mapi_pref_cgeint_3d75bc6d79974e3bba794fce536fb1dc";s:10:"1514132730";s:33:"JMFilePicker_mapi_pref_feu_access";s:0:"";s:35:"JMFilePicker_mapi_pref_use_mimetype";s:0:"";s:36:"JMFilePicker_mapi_pref_scaling_width";s:0:"";s:37:"JMFilePicker_mapi_pref_scaling_height";s:0:"";s:36:"JMFilePicker_mapi_pref_create_thumbs";s:1:"1";s:38:"JMFilePicker_mapi_pref_allow_upscaling";s:1:"1";s:47:"JMFilePicker_mapi_pref_restrict_users_diraccess";s:1:"1";s:29:"LISE_mapi_pref_allow_autoscan";s:1:"1";s:32:"LISE_mapi_pref_allow_autoinstall";s:1:"1";s:31:"LISE_mapi_pref_allow_autoupdate";s:1:"1";s:43:"LISESlider_mapi_pref_extra3_enabled_wysiwyg";s:1:"0";s:32:"CustomGS_mapi_pref_admin_section";s:4:"main";s:42:"SimpleSiteInfo_mapi_pref_SimpleSiteInfoPwd";s:24:"MztoZpyHwk8KN1D2cYC4ITWf";s:56:"LISESlider_mapi_pref_liseslider_default_summary_template";s:7:"default";s:55:"LISESlider_mapi_pref_liseslider_default_detail_template";s:7:"default";s:55:"LISESlider_mapi_pref_liseslider_default_search_template";s:7:"default";s:57:"LISESlider_mapi_pref_liseslider_default_category_template";s:7:"default";s:56:"LISESlider_mapi_pref_liseslider_default_archive_template";s:7:"default";s:30:"LISESlider_mapi_pref_sortorder";s:3:"ASC";s:33:"LISESlider_mapi_pref_adminsection";s:7:"content";s:31:"LISESlider_mapi_pref_url_prefix";s:10:"liseslider";s:32:"LISESlider_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:33:"LISESlider_mapi_pref_friendlyname";s:14:"Slider Manager";s:34:"LISESlider_mapi_pref_item_singular";s:4:"Item";s:32:"LISESlider_mapi_pref_item_plural";s:5:"Items";s:31:"LISESlider_mapi_pref_item_title";s:5:"Title";s:35:"LISESlider_mapi_pref_moddescription";s:77:"LISE allows you to create lists that you can display throughout your website.";s:38:"SitemapMgr_mapi_pref_robotstxt_content";s:293:"User-agent: *
+
+Sitemap: http://core.cms2231.dev/sitemap.xml
+
+Disallow: /assets/
+Disallow: /doc/
+Disallow: /install/
+Disallow: /lib/
+Disallow: /modules/
+Disallow: /module_custom/
+Disallow: /plugins/
+Disallow: /scripts/
+Disallow: /tmp/
+
+Allow: /assets/sitemaps/
+Allow: /tmp/cache/";s:37:"MleCMS_mapi_pref_mle_hierarchy_switch";s:1:"1";s:34:"MleCMS_mapi_pref_mle_auto_redirect";s:1:"0";s:37:"MleCMS_mapi_pref_default_mle_template";s:643:"{if $langs_count}
+    {foreach from=$langs item=l name=language}
+    {capture assign="lang_href"}{cms_selflink href=$l.alias}{/capture}
+    {if $lang_href}
+        {if $page_alias==$l.alias}
+            <span class="active">
+        {if $l.flag}<img src="uploads/{$l.flag}" alt="{$l.name}" title="{$l.name}"  />{else}{$l.name}{/if}
+    </span>
+{else}
+    <a   {if $l.flag}style="-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)'; filter: alpha(opacity=50); opacity:.5;"{/if} href="{$lang_href}">
+{if $l.flag}<img src="uploads/{$l.flag}" alt="{$l.name}" title="{$l.name}"  />{else}{$l.name}{/if}
+</a>
+{/if}
+{/if}
+{/foreach}
+{/if}";s:37:"MleCMS_mapi_pref_current_mle_template";s:5:"Flags";s:56:"MleCMS_mapi_pref_cgeint_d7bc01f7481322014d3b31dfa9e05b15";s:10:"1515854820";s:39:"MleCMS_mapi_pref_mle_search_restriction";s:1:"1";s:25:"MleCMS_mapi_pref_mle_init";s:11:"__DEFAULT__";s:62:"CGSmartImage_mapi_pref_cgeint_f691c6e4c58af40e814256ea3063ad48";s:10:"1513264171";s:44:"CGSmartImage_mapi_pref_croptofit_default_loc";s:1:"c";s:33:"CGSmartImage_mapi_pref_cache_path";s:0:"";s:39:"CGSmartImage_mapi_pref_image_url_prefix";s:0:"";s:29:"CGSmartImage_mapi_pref_silent";s:1:"0";s:34:"CGSmartImage_mapi_pref_checkmemory";s:1:"1";s:38:"CGSmartImage_mapi_pref_force_extension";s:1:"1";s:35:"CGSmartImage_mapi_pref_autoscale_op";s:9:"croptofit";s:40:"CGSmartImage_mapi_pref_assume_responsive";s:1:"0";s:45:"CGSmartImage_mapi_pref_responsive_breakpoints";s:0:"";s:43:"LISESlider_mapi_pref_extra2_enabled_wysiwyg";s:1:"0";s:43:"LISESlider_mapi_pref_extra1_enabled_wysiwyg";s:1:"0";s:21:"enablesitedownmessage";s:1:"0";s:20:"sitedown_use_wysiwyg";s:1:"0";s:16:"sitedownexcludes";s:0:"";s:21:"sitedownexcludeadmins";s:1:"0";s:11:"mail_is_set";s:1:"1";s:9:"mailprefs";s:386:"a:12:{s:6:"mailer";s:4:"smtp";s:4:"host";s:14:"smtp.gmail.com";s:4:"port";s:3:"465";s:4:"from";s:22:"songviytuong@gmail.com";s:8:"fromuser";s:17:"Lee Administrator";s:8:"sendmail";s:18:"/usr/sbin/sendmail";s:8:"smtpauth";s:1:"1";s:8:"username";s:22:"songviytuong@gmail.com";s:8:"password";s:16:"szlqrnxflialtdof";s:6:"secure";s:3:"ssl";s:7:"timeout";s:2:"60";s:7:"charset";s:5:"utf-8";}";s:49:"LISESEO_mapi_pref_liseseo_default_detail_template";s:7:"default";s:49:"LISESEO_mapi_pref_liseseo_default_search_template";s:7:"default";s:51:"LISESEO_mapi_pref_liseseo_default_category_template";s:7:"default";s:50:"LISESEO_mapi_pref_liseseo_default_archive_template";s:7:"default";s:27:"LISESEO_mapi_pref_sortorder";s:3:"ASC";s:30:"LISESEO_mapi_pref_adminsection";s:7:"content";s:28:"LISESEO_mapi_pref_url_prefix";s:7:"liseseo";s:29:"LISESEO_mapi_pref_urltemplate";s:23:"{$prefix}/{$item_title}";s:30:"LISESEO_mapi_pref_friendlyname";s:7:"LISESEO";s:31:"LISESEO_mapi_pref_item_singular";s:4:"Item";s:29:"LISESEO_mapi_pref_item_plural";s:5:"Items";s:28:"LISESEO_mapi_pref_item_title";s:5:"Title";s:32:"LISESEO_mapi_pref_moddescription";s:77:"LISE allows you to create lists that you can display throughout your website.";s:37:"LISESEO_mapi_pref_display_create_date";s:1:"0";s:27:"LISESEO_mapi_pref_item_cols";s:5:"alias";s:32:"LISESEO_mapi_pref_items_per_page";s:2:"20";s:32:"LISESEO_mapi_pref_display_inline";s:1:"0";s:29:"LISESEO_mapi_pref_subcategory";s:1:"0";s:28:"LISESEO_mapi_pref_detailpage";s:1:"0";s:29:"LISESEO_mapi_pref_summarypage";s:1:"0";s:32:"LISESEO_mapi_pref_reindex_search";s:1:"0";s:30:"LISESEO_mapi_pref_auto_upgrade";s:1:"0";s:28:"LISESEO_mapi_pref_sent_email";s:1:"0";s:30:"LISESEO_mapi_pref_time_control";s:1:"0";s:38:"CMSContentManager_mapi_pref_page_prefs";s:390:"a:16:{s:11:"contenttype";s:7:"content";s:16:"disallowed_types";s:0:"";s:9:"design_id";s:2:"10";s:11:"template_id";s:2:"30";s:9:"parent_id";i:-2;s:6:"secure";s:1:"0";s:8:"cachable";s:1:"1";s:6:"active";s:1:"1";s:10:"showinmenu";s:1:"1";s:8:"metadata";s:0:"";s:7:"content";s:0:"";s:10:"searchable";s:1:"1";s:11:"addteditors";a:0:{}s:6:"extra1";s:0:"";s:6:"extra2";s:0:"";s:6:"extra3";s:0:"";}";s:64:"CGContentUtils_mapi_pref_cgeint_103cf8d2faee1d709f26f391de42e08b";s:10:"1503765682";s:38:"CGSmartImage_mapi_pref_embed_sizelimit";s:1:"0";s:34:"CGSmartImage_mapi_pref_embed_types";s:0:"";s:36:"ModuleManager_mapi_pref_dl_chunksize";s:3:"256";s:37:"ModuleManager_mapi_pref_latestdepends";s:1:"1";s:38:"ModuleManager_mapi_pref_allowuninstall";s:1:"0";s:42:"JMFilePicker_mapi_pref_show_filemanagement";s:1:"1";s:38:"JMFilePicker_mapi_pref_show_thumbfiles";s:1:"1";s:36:"JMFilePicker_mapi_pref_allow_scaling";s:1:"1";s:36:"TinyMCE_mapi_pref_id_default_profile";s:1:"1";s:34:"TinyMCE_mapi_pref_filemanager_salt";s:10:"16f88bcb1b";s:40:"MicroTiny_mapi_pref_profile___frontend__";s:179:"a:7:{s:4:"name";s:12:"__frontend__";s:5:"label";s:16:"Frontend Editors";s:7:"menubar";b:0;s:11:"allowimages";b:0;s:13:"showstatusbar";b:0;s:11:"allowresize";b:0;s:6:"system";b:1;}";s:37:"MicroTiny_mapi_pref_profile___admin__";s:172:"a:7:{s:4:"name";s:9:"__admin__";s:5:"label";s:13:"Admin Editors";s:7:"menubar";b:1;s:11:"allowimages";b:1;s:13:"showstatusbar";b:1;s:11:"allowresize";b:1;s:6:"system";b:1;}";s:59:"BoxPacker_mapi_pref_cgeint_29751c5585377842c24a4bedca626802";s:10:"1499951706";s:32:"LISESEO_mapi_pref_extra2_enabled";s:1:"0";s:32:"LISESEO_mapi_pref_extra3_enabled";s:1:"0";s:17:"force_mle_default";s:1:"1";s:21:"default_lang_fallback";s:1:"1";s:38:"CGGoogleMaps2_mapi_pref_default_marker";s:6:"dd-end";s:63:"CGGoogleMaps2_mapi_pref_cgeint_25d5a11524ca931e87c353a9e256e20c";s:10:"1503763695";s:38:"CGGoogleMaps2_mapi_pref_lookup_service";s:6:"GOOGLE";s:37:"CGGoogleMaps2_mapi_pref_lookup_policy";s:10:"CACHEFIRST";s:35:"CGGoogleMaps2_mapi_pref_default_map";s:1:"1";s:33:"LISESlider_mapi_pref_auto_upgrade";s:1:"0";s:40:"LISESlider_mapi_pref_display_create_date";s:1:"0";s:30:"LISESlider_mapi_pref_item_cols";s:4:"type";s:35:"LISESlider_mapi_pref_items_per_page";s:2:"10";s:35:"LISESlider_mapi_pref_display_inline";s:1:"0";s:32:"LISESlider_mapi_pref_subcategory";s:1:"0";s:31:"LISESlider_mapi_pref_detailpage";s:1:"0";s:32:"LISESlider_mapi_pref_summarypage";s:1:"0";s:35:"LISESlider_mapi_pref_reindex_search";s:1:"1";s:35:"Banners_mapi_pref_subnet_exclusions";s:0:"";s:34:"Banners_mapi_pref_default_template";s:402:"{* banner category template *}
+{strip}
+{if isset($banner.clickthrough)}
+<a rel="nofollow" href="{$banner.clickthrough}" title="{$banner.name}">
+<img src="uploads/{$banner.image}" width="450" height="68" alt="{$banner.text|default:''}"/>
+</a>
+{else}
+{* no url found, just displaying an image *}
+<img src="uploads/{$banner.image}" width="450" height="68" alt="{$banner.text|default:''}"/>
+{/if}
+{/strip}
+";s:57:"Banners_mapi_pref_cgeint_a54f98b0e23e6925c855760cdabd7168";s:10:"1516207609";s:47:"JMFilePicker_mapi_pref_thumb_prefix_replacement";s:0:"";s:42:"JMFilePicker_mapi_pref_thumb_upload_action";s:0:"";s:36:"JMFilePicker_mapi_pref_force_scaling";s:0:"";s:38:"FAQ_mapi_pref_default_summary_template";s:16:"summary_tpl_list";s:37:"FAQ_mapi_pref_default_detail_template";s:16:"detail_tpl_entry";s:31:"FAQ_mapi_pref_custom_modulename";s:26:"Frequently Asked Questions";s:27:"FAQ_mapi_pref_admin_section";s:7:"content";s:34:"FAQ_mapi_pref_use_question_wysiwyg";s:1:"0";s:32:"FAQ_mapi_pref_use_answer_wysiwyg";s:1:"1";s:29:"FAQ_mapi_pref_defaultcategory";s:1:"1";s:26:"FAQ_mapi_pref_entries_page";s:0:"";s:32:"Quotes_mapi_pref_defaulttemplate";s:1:"1";s:29:"Quotes_mapi_pref_defaultgroup";s:1:"1";s:29:"Quotes_mapi_pref_allowwysiwyg";s:1:"0";s:29:"Quotes_mapi_pref_filesentries";s:1:"0";s:25:"Quotes_mapi_pref_allowmle";s:1:"1";s:31:"News_mapi_pref_default_category";s:1:"1";s:38:"News_mapi_pref_formsubmit_emailaddress";s:0:"";s:33:"News_mapi_pref_hide_summary_field";s:1:"0";s:36:"News_mapi_pref_allow_summary_wysiwyg";s:1:"1";s:33:"News_mapi_pref_expired_searchable";s:1:"0";s:31:"News_mapi_pref_expired_viewable";s:1:"1";s:30:"News_mapi_pref_expiry_interval";s:3:"180";s:30:"News_mapi_pref_fesubmit_status";s:5:"draft";s:32:"News_mapi_pref_fesubmit_redirect";s:0:"";s:30:"News_mapi_pref_detail_returnid";s:2:"-1";s:29:"News_mapi_pref_allow_fesubmit";s:1:"0";s:27:"News_mapi_pref_alert_drafts";s:1:"1";s:23:"News_mapi_pref_allowmle";s:1:"1";s:46:"CMSContentManager_mapi_pref_template_list_mode";s:10:"designpage";s:36:"CMSContentManager_mapi_pref_allowmle";s:1:"1";s:43:"adminalert_6c90bdde8f818884b1fbe817ca38f0e7";s:708:"a:2:{s:6:"module";s:0:"";s:4:"data";s:662:"O:35:"CMSMS\AdminAlerts\TranslatableAlert":10:{s:43:" CMSMS\AdminAlerts\TranslatableAlert _perms";a:1:{i:0;s:23:"Modify Site Preferences";}s:42:" CMSMS\AdminAlerts\TranslatableAlert _icon";N;s:46:" CMSMS\AdminAlerts\TranslatableAlert _titlekey";s:14:"security_issue";s:44:" CMSMS\AdminAlerts\TranslatableAlert _msgkey";s:15:"config_writable";s:45:" CMSMS\AdminAlerts\TranslatableAlert _msgargs";N;s:30:" CMSMS\AdminAlerts\Alert _name";s:26:"CmsSecurityCheckTaskconfig";s:32:" CMSMS\AdminAlerts\Alert _module";N;s:33:" CMSMS\AdminAlerts\Alert _created";i:1516168412;s:34:" CMSMS\AdminAlerts\Alert _priority";s:5:"_high";s:32:" CMSMS\AdminAlerts\Alert _loaded";N;}";}";s:38:"SitemapMgr_mapi_pref_humanstxt_content";s:468:"/* TEAM */
+Name: Your name
+E-mail: you@website.com
+Twitter: @yourtwitter
+Location: City, Country
+
+Name: Your colleagues name
+E-mail: colleague@website.com
+Twitter: @hisorhertwitter
+Location: City, Country
+
+/* THANKS */
+CMS Can Be Simple - For all those great CMSMS tips and tricks!
+https://www.cmscanbesimple.org
+
+/* SITE */
+Standards: HTML5, CSS3, etc.                      
+Components: Modernizr, jQuery, etc.
+Software: CMS Made Simple, what else?!";}

@@ -1,0 +1,213 @@
+<?php
+$cggm2_map_fields['name'] = array();
+$cggm2_map_fields['name']['type'] = 'TEXT';
+$cggm2_map_fields['name']['prompt_key'] = 'prompt_mapname';
+$cggm2_map_fields['name']['info_key'] = 'info_mapname';
+$cggm2_map_fields['name']['size'] = 50;
+$cggm2_map_fields['name']['maxlength'] = 255;
+$cggm2_map_fields['name']['tab'] = 'basics';
+
+$cggm2_map_fields['description'] = array();
+$cggm2_map_fields['description']['type'] = 'TEXTAREA';
+$cggm2_map_fields['description']['wysiwyg'] = 1;
+$cggm2_map_fields['description']['prompt_key'] = 'description';
+$cggm2_map_fields['description']['tab'] = 'basics';
+
+$cggm2_map_fields['default_icon'] = array();
+$cggm2_map_fields['default_icon']['type'] = 'ICON';
+$cggm2_map_fields['default_icon']['prompt_key'] = 'default_icon';
+$cggm2_map_fields['default_icon']['info_key'] = 'info_default_icon';
+$cggm2_map_fields['default_icon']['dflt'] = 'dd-end';
+$cggm2_map_fields['default_icon']['tab'] = 'basics';
+
+$cggm2_map_fields['type'] = array();
+$cggm2_map_fields['type']['type'] = 'SELECT';
+$cggm2_map_fields['type']['options'] = 'roadmap=>map,satellite=>satellite,terrain=>terrain,hybrid=>hybrid';
+$cggm2_map_fields['type']['prompt_key'] = 'map_type';
+$cggm2_map_fields['type']['info_key'] = 'info_map_type';
+$cggm2_map_fields['type']['dflt'] = 'hybrid';
+$cggm2_map_fields['type']['tab'] = 'basics';
+
+$cggm2_map_fields['zoom'] = array();
+$cggm2_map_fields['zoom']['type'] = 'SELECT';
+$cggm2_map_fields['zoom']['options'] = '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21';
+$cggm2_map_fields['zoom']['prompt_key'] = 'prompt_zoom';
+$cggm2_map_fields['zoom']['info_key'] = 'info_zoom';
+$cggm2_map_fields['zoom']['dflt'] = 7;
+$cggm2_map_fields['zoom']['tab'] = 'basics';
+
+
+$cggm2_map_fields['nav_controls'] = array();
+$cggm2_map_fields['nav_controls']['type'] = 'BOOL';
+$cggm2_map_fields['nav_controls']['prompt_key'] = 'controls';
+$cggm2_map_fields['nav_controls']['info_key'] = 'info_controls';
+$cggm2_map_fields['nav_controls']['dflt'] = 1;
+$cggm2_map_fields['nav_controls']['tab'] = 'visibility';
+
+$cggm2_map_fields['infowindow'] = array();
+$cggm2_map_fields['infowindow']['type'] = 'BOOL';
+$cggm2_map_fields['infowindow']['prompt_key'] = 'prompt_info_window';
+$cggm2_map_fields['infowindow']['info_key'] = 'info_info_window';
+$cggm2_map_fields['infowindow']['dflt'] = 1;
+$cggm2_map_fields['infowindow']['tab'] = 'visibility';
+
+$cggm2_map_fields['scale_controls'] = array();
+$cggm2_map_fields['scale_controls']['type'] = 'BOOL';
+$cggm2_map_fields['scale_controls']['prompt_key'] = 'scalecontrols';
+$cggm2_map_fields['scale_controls']['info_key'] = 'info_scalecontrols';
+$cggm2_map_fields['scale_controls']['dflt'] = 0;
+$cggm2_map_fields['scale_controls']['tab'] = 'visibility';
+
+$cggm2_map_fields['sv_controls'] = array();
+$cggm2_map_fields['sv_controls']['type'] = 'BOOL';
+$cggm2_map_fields['sv_controls']['prompt_key'] = 'sv_controls';
+$cggm2_map_fields['sv_controls']['info_key'] = 'info_sv_controls';
+$cggm2_map_fields['sv_controls']['tab'] = 'visibility';
+
+$cggm2_map_fields['type_controls'] = array();
+$cggm2_map_fields['type_controls']['type'] = 'BOOL';
+$cggm2_map_fields['type_controls']['prompt_key'] = 'type_controls';
+$cggm2_map_fields['type_controls']['info_key'] = 'info_type_controls';
+$cggm2_map_fields['type_controls']['dflt'] = 1;
+$cggm2_map_fields['type_controls']['tab'] = 'visibility';
+
+$cggm2_map_fields['tooltip'] = array();
+$cggm2_map_fields['tooltip']['type'] = 'BOOL';
+$cggm2_map_fields['tooltip']['prompt_key'] = 'prompt_tooltip';
+$cggm2_map_fields['tooltip']['info_key'] = 'info_tooltip';
+$cggm2_map_fields['tooltip']['dflt'] = 1;
+$cggm2_map_fields['tooltip']['tab'] = 'visibility';
+
+$cggm2_map_fields['sv_radius'] = array();
+$cggm2_map_fields['sv_radius']['type'] = 'TEXT';
+$cggm2_map_fields['sv_radius']['size'] = 4;
+$cggm2_map_fields['sv_radius']['dflt'] = 100;
+$cggm2_map_fields['sv_radius']['prompt_key'] = 'sv_radius';
+$cggm2_map_fields['sv_radius']['info_key'] = 'info_sv_radius';
+$cggm2_map_fields['sv_radius']['tab'] = 'advanced';
+
+$cggm2_map_fields['type_control_option'] = array();
+$cggm2_map_fields['type_control_option']['type'] = 'SELECT';
+$cggm2_map_fields['type_control_option']['options'] = 'DEFAULT=>k:default,DROPDOWN_MENU=>k:dropdown,SMALL=>k:small,HORIZONTAL_BAR=>k:horizontal_bar';
+$cggm2_map_fields['type_control_option']['prompt_key'] = 'type_control_opt';
+$cggm2_map_fields['type_control_option']['info_key'] = 'info_type_control_opt';
+$cggm2_map_fields['type_control_option']['dflt'] = 'DEFAULT';
+$cggm2_map_fields['type_control_option']['tab'] = 'advanced';
+
+$cggm2_map_fields['infowindow_trigger'] = array();
+$cggm2_map_fields['infowindow_trigger']['type'] = 'SELECT';
+$cggm2_map_fields['infowindow_trigger']['options'] = 'none=>k:none,click=>k:click,mouseover=>k:mouseover';
+$cggm2_map_fields['infowindow_trigger']['prompt_key'] = 'prompt_info_trigger';
+$cggm2_map_fields['infowindow_trigger']['info_key'] = 'info_info_trigger';
+$cggm2_map_fields['infowindow_trigger']['dflt'] = 'click';
+$cggm2_map_fields['infowindow_trigger']['tab'] = 'advanced';
+
+$cggm2_map_fields['directions'] = array();
+$cggm2_map_fields['directions']['type'] = 'BOOL';
+$cggm2_map_fields['directions']['prompt_key'] = 'directions';
+$cggm2_map_fields['directions']['info_key'] = 'info_directions';
+$cggm2_map_fields['directions']['tab'] = 'directions';
+$cggm2_map_fields['directions']['dflt'] = 1;
+
+$cggm2_map_fields['directions_dest'] = array();
+$cggm2_map_fields['directions_dest']['type'] = 'SELECT';
+$cggm2_map_fields['directions_dest']['options'] = 'WINDOW=>k:window,PANEL=>k:panel';
+$cggm2_map_fields['directions_dest']['prompt_key'] = 'directions_dest';
+$cggm2_map_fields['directions_dest']['info_key'] = 'info_directions_dest';
+$cggm2_map_fields['directions_dest']['tab'] = 'directions';
+$cggm2_map_fields['directions_dest']['dflt'] = 'WINDOW';
+
+$cggm2_map_fields['directions_units'] = array();
+$cggm2_map_fields['directions_units']['type'] = 'SELECT';
+$cggm2_map_fields['directions_units']['options'] = 'METRIC=>k:metric,IMPERIAL=>k:imperial';
+$cggm2_map_fields['directions_units']['prompt_key'] = 'directions_units';
+$cggm2_map_fields['directions_units']['info_key'] = 'info_directions_units';
+$cggm2_map_fields['directions_units']['tab'] = 'directions';
+$cggm2_map_fields['directions_units']['dflt'] = 'IMPERIAL';
+
+$cggm2_map_fields['directions_draw'] = array();
+$cggm2_map_fields['directions_draw']['type'] = 'BOOL';
+$cggm2_map_fields['directions_draw']['prompt_key'] = 'directions_draw';
+$cggm2_map_fields['directions_draw']['info_key'] = 'info_directions_draw';
+$cggm2_map_fields['directions_draw']['tab'] = 'directions';
+$cggm2_map_fields['directions_draw']['dflt'] = 1;
+
+
+$cggm2_map_fields['sensor'] = array();
+$cggm2_map_fields['sensor']['type'] = 'BOOL';
+$cggm2_map_fields['sensor']['prompt_key'] = 'prompt_sensor';
+$cggm2_map_fields['sensor']['info_key'] = 'info_sensor';
+$cggm2_map_fields['sensor']['tab'] = 'geolocate';
+$cggm2_map_fields['sensor']['dflt'] = 1;
+
+$cggm2_map_fields['sensor_center'] = array();
+$cggm2_map_fields['sensor_center']['type'] = 'BOOL';
+$cggm2_map_fields['sensor_center']['prompt_key'] = 'prompt_sensor_center';
+$cggm2_map_fields['sensor_center']['info_key'] = 'info_sensor_center';
+$cggm2_map_fields['sensor_center']['tab'] = 'geolocate';
+$cggm2_map_fields['sensor_center']['dflt'] = 1;
+
+$cggm2_map_fields['sensor_marker'] = array();
+$cggm2_map_fields['sensor_marker']['type'] = 'BOOL';
+$cggm2_map_fields['sensor_marker']['prompt_key'] = 'prompt_sensor_marker';
+$cggm2_map_fields['sensor_marker']['info_key'] = 'info_sensor_marker';
+$cggm2_map_fields['sensor_marker']['tab'] = 'geolocate';
+$cggm2_map_fields['sensor_marker']['dflt'] = 0;
+
+$cggm2_map_fields['sensor_icon'] = array();
+$cggm2_map_fields['sensor_icon']['type'] = 'ICON';
+$cggm2_map_fields['sensor_icon']['prompt_key'] = 'prompt_sensor_icon';
+$cggm2_map_fields['sensor_icon']['info_key'] = 'info_sensor_icon';
+$cggm2_map_fields['sensor_icon']['tab'] = 'geolocate';
+$cggm2_map_fields['sensor_icon']['dflt'] = 'dd-end-small';
+
+$cggm2_map_fields['center_lat'] = array();
+$cggm2_map_fields['center_lat']['type'] = 'TEXT';
+$cggm2_map_fields['center_lat']['prompt_key'] = 'center_lat';
+$cggm2_map_fields['center_lat']['info_key'] = 'info_center_lat';
+$cggm2_map_fields['center_lat']['convert'] = 'float';
+$cggm2_map_fields['center_lat']['tab'] = 'advanced';
+
+$cggm2_map_fields['center_lon'] = array();
+$cggm2_map_fields['center_lon']['type'] = 'TEXT';
+$cggm2_map_fields['center_lon']['prompt_key'] = 'center_lon';
+$cggm2_map_fields['center_lon']['info_key'] = 'info_center_lon';
+$cggm2_map_fields['center_lon']['convert'] = 'float';
+$cggm2_map_fields['center_lon']['tab'] = 'advanced';
+
+$cggm2_map_fields['zoom_encompass'] = array();
+$cggm2_map_fields['zoom_encompass']['type'] = 'BOOL';
+$cggm2_map_fields['zoom_encompass']['prompt_key'] = 'zoom_encompass';
+$cggm2_map_fields['zoom_encompass']['info_key'] = 'info_zoom_encompass';
+$cggm2_map_fields['zoom_encompass']['tab'] = 'advanced';
+$cggm2_map_fields['zoom_encompass']['dflt'] = 0;
+
+$cggm2_map_fields['bounds_fudge'] = array();
+$cggm2_map_fields['bounds_fudge']['type'] = 'TEXT';
+$cggm2_map_fields['bounds_fudge']['prompt_key'] = 'prompt_bounds_fudge';
+$cggm2_map_fields['bounds_fudge']['info_key'] = 'info_bounds_fudge';
+$cggm2_map_fields['bounds_fudge']['convert'] = 'float';
+$cggm2_map_fields['bounds_fudge']['tab'] = 'advanced';
+
+$cggm2_map_fields['combine_points'] = array();
+$cggm2_map_fields['combine_points']['type'] = 'BOOL';
+$cggm2_map_fields['combine_points']['prompt_key'] = 'combine_points';
+$cggm2_map_fields['combine_points']['info_key'] = 'info_combine_points';
+$cggm2_map_fields['combine_points']['tab'] = 'advanced';
+$cggm2_map_fields['combine_points']['dflt'] = 0;
+
+$cggm2_map_fields['point_combine_fudge'] = array();
+$cggm2_map_fields['point_combine_fudge']['type'] = 'TEXT';
+$cggm2_map_fields['point_combine_fudge']['prompt_key'] = 'point_combine_fudge';
+$cggm2_map_fields['point_combine_fudge']['info_key'] = 'info_point_combine_fudge';
+$cggm2_map_fields['point_combine_fudge']['convert'] = 'float';
+$cggm2_map_fields['point_combine_fudge']['tab'] = 'advanced';
+
+$cggm2_map_fields['combined_icon'] = array();
+$cggm2_map_fields['combined_icon']['type'] = 'ICON';
+$cggm2_map_fields['combined_icon']['prompt_key'] = 'point_combine_icon';
+$cggm2_map_fields['combined_icon']['info_key'] = 'info_point_combine_icon';
+$cggm2_map_fields['combined_icon']['tab'] = 'advanced';
+$cggm2_map_fields['combined_icon']['dflt'] = 'star';
+
+?>

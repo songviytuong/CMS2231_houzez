@@ -1,0 +1,115 @@
+/* a small, resizable text area */
+div.warning,p.warning {
+    display: block;
+}
+div.information,p.information {
+    display: block;
+}
+textarea {
+  width: auto;
+  height: auto;
+}
+
+textarea.ta_resizable {
+  width: 35em;
+  height: 4em;
+  max-height: 15em;
+  max-width: 60em;
+  resize: both;
+}
+
+/* a large, resizable text area */
+textarea.ta_resizable_lg {
+  width: 35em;
+  height: 10em;
+  max-height: 20em;
+  max-width: 70em;
+  resize: both;
+}
+
+/* all system icons should be small */
+img.systemicon {
+    max-height: 16px;
+}
+
+/* format stuff aligned to the right */
+div.right-box,p.right-box {
+    float:right;
+    text-align: right;
+    padding-right: 1em;
+}
+.text-right {
+    text-align: right !important;
+}
+table td.text-right {
+    padding-right: 1em;
+}
+.text-left {
+    text-align: left !important;
+}
+table td.text-left {
+    padding-left: 1em;
+}
+
+/* tooltip stuff */
+div.cg_tooltip_data {
+    display: none;
+}
+
+/* option menus */
+ul.option-menu-horiz {
+    border: none;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+ul.option-menu-horiz ul {
+    list-style-type: none !important;
+    display: block;
+    clear: both;
+}
+ul.option-menu-horiz .ui-menu-item {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    width: auto;
+}
+ul.option-menu-horiz li {
+    padding-right: 0.5em;
+}
+
+
+/* adjust goran's grid stuff for smaller screens */
+@media screen and (max-width: 1200px) {
+  .grid_4 {
+    float: initial !important;
+    width: auto !important;
+    margin: auto !important;
+  }
+  .grid_6 {
+    float: initial !important;
+    width: auto !important;
+    margin: auto !important;
+  }
+  .grid_8 {
+    float: initial !important;
+    width: auto !important;
+    margin: auto !important;
+  }
+}
+
+.cge_sig {
+    float: right;
+    background-color: #cee6f2;
+    border-radius: 4px;
+    padding: 0.25em;
+    border: 1px solid #058dc7;
+    margin-bottom: 0.25em;
+}
+.cge_sig > span {
+    margin-left: 0.25em;
+}
+.sig_error {
+    background-color: #f2d4ce !important;
+    border: 1px solid #ae432e !important;
+}

@@ -1,0 +1,4 @@
+<div class="faq">
+	<div class="faq_q">{$faq_entry->question}</div>
+	<div class="faq_a">{$faq_entry->answer}</div>
+</div>

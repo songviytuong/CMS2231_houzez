@@ -1,0 +1,9 @@
+- comes with list of known fields
+- field list is extendable
+- fields are groupable
+- config entries to specify default values
+- cghm_ prefix fields
+- uses smarty templates for default values
+- can adjust values with smarty plugins
+- handles meta and link tags
+- fields with an empty attr value are ignored.

@@ -1,0 +1,4 @@
+<?php
+$info['js'] = 'jquery.custom-combobox.js';
+$info['depends'] = 'ui';
+?>

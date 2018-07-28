@@ -1,0 +1,69 @@
+__SERIALIZED__a:5:{s:12:"content_type";a:6:{s:13:"userplugin_id";s:1:"3";s:15:"userplugin_name";s:12:"content_type";s:4:"code";s:299:"$content_type = get_parameter_value($params,'type');
+if ($content_type != '') { cmsms()->set_content_type($content_type); }
+if ($content_type == 'text/javascript')
+{
+  header("Cache-Control: max-age=2678400"); // 31 days
+  header("Cache-Control: public", false);
+  header("Pragma: public");
+}";s:11:"description";s:0:"";s:11:"create_date";s:19:"2017-06-27 04:30:05";s:13:"modified_date";s:19:"2017-06-27 04:30:05";}s:16:"custom_copyright";a:6:{s:13:"userplugin_id";s:1:"2";s:15:"userplugin_name";s:16:"custom_copyright";s:4:"code";s:311:"//set start to date your site was published
+$startCopyRight='2004';
+
+// check if start year is this year
+if(date('Y') == $startCopyRight){
+// it was, just print this year
+    echo $startCopyRight;
+}else{
+// it wasnt, print startyear and this year delimited with a dash
+    echo $startCopyRight.'-'. date('Y');
+}";s:11:"description";s:36:"Code to output copyright information";s:11:"create_date";s:19:"2017-06-27 06:17:12";s:13:"modified_date";s:19:"2017-06-27 06:17:12";}s:15:"EventActionAuto";a:6:{s:13:"userplugin_id";s:1:"4";s:15:"userplugin_name";s:15:"EventActionAuto";s:4:"code";s:528:"$gCms = cmsms();
+$alias = $params["page"];
+$config = $gCms->GetConfig();
+$db =& $gCms->GetDb();
+$proid = isset($params["proid"]) ? $params["proid"] : 0;
+$module = isset($params["module"]) ? $params["module"] : '';
+$msg = isset($params["msg"]) ? $params["msg"] : '';
+$modified_date = isset($params["modified_date"]) ? $params["modified_date"] : '2017-04-21 01:50:15';
+if($module && $proid !=0){
+    $up = "INSERT INTO cms_histories (`item_id`,`module`,`msg`) VALUES ($proid,'$module','$msg')";
+    $db->Execute($up);
+}";s:11:"description";s:0:"";s:11:"create_date";s:19:"2017-06-29 14:39:39";s:13:"modified_date";s:19:"2017-06-29 14:39:39";}s:13:"get_languages";a:6:{s:13:"userplugin_id";s:1:"5";s:15:"userplugin_name";s:13:"get_languages";s:4:"code";s:1076:"global $gCms;
+$gCms = CmsApp::get_instance();
+
+#Start MLE
+global $hls, $hl;
+$urlBASE = "http://".$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
+if (!empty($_SERVER["QUERY_STRING"]))
+$urlBASE .= "?".$_SERVER['QUERY_STRING'];
+if (isset($gCms->config['assume_mod_rewrite']) && ($gCms->config['assume_mod_rewrite']==true)) {
+ 
+$urls = str_replace("index.php?page=", "", $urlBASE);
+$urls = str_replace("index.php", "", $urls);
+
+}else{
+    $urls = $urlBASE;
+}
+$thisURL = $urls . '?';
+$thisURL = explode("?",$thisURL);
+$thisURL = $thisURL[0]."?";
+
+foreach ($_GET as $key => $val)
+
+    if ('hl' != $key){
+        $urls1 = explode("&",$urls);
+        $urls1 = $urls1[0];
+        $thisURL = $urls1 . '?';
+    }
+    
+
+if (isset($hls)) {
+    $langList = '<ul class="lang">';
+    foreach ($hls as $key => $mle) {
+        $langList .= "<li>";
+        $langList .= ($hl == $key) ? $mle['flag'] . ' ' : '<a href="' . $thisURL . 'hl=' . $key . '">' . $mle['flag'] . '</a> ';
+        $langList .= "</li>";
+    }
+    $langList .="</ul>";
+}
+
+echo $langList;";s:11:"description";s:0:"";s:11:"create_date";s:19:"2017-08-28 22:49:59";s:13:"modified_date";s:19:"2017-08-28 22:49:59";}s:10:"user_agent";a:6:{s:13:"userplugin_id";s:1:"1";s:15:"userplugin_name";s:10:"user_agent";s:4:"code";s:82:"//Code to show the users user agent information.
+echo $_SERVER['HTTP_USER_AGENT'];";s:11:"description";s:46:"Code to show the user's user agent information";s:11:"create_date";s:19:"2017-06-27 06:17:12";s:13:"modified_date";s:19:"2017-06-27 06:17:12";}}

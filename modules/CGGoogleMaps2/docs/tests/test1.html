@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CGGM2 Map Test 1</title>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="//maps.google.com/maps/api/js?libraries=geometry&amp;sensor=true"></script>
+  <script src="../../lib/js/infobox_packed.js"></script>
+  <script src="../../lib/js/map_tooltip.js"></script>
+  <script src="../../lib/js/jquery.cggm_map.js"></script>
+  <style type="text/css">
+    div.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div#map {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+    }
+    .infoBox {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid yellow;
+    }
+    .tooltip {
+      padding: 3px;
+      background-color: yellow;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+  $(function() {
+    var options = {
+      markers: [
+        {
+          name: 'calgary',
+          title: 'Oil and Gas Headquarters',
+          description: 'The home of the Calgary Stampede.<br/>The greatest outdoor show on earth!',
+          position: [ '51.045325','-114.058101' ]
+        }
+      ]
+    };
+    $('#map').cggm2(options);
+  });
+  </script>
+</head>
+<body>
+
+  <h1 style="text-align: center;">CGGM2 Map Test 1</hi>
+  <p style="text-align: center;">A simple map, with one marker at Calgary, AB.</p>
+  <div id="map" class="center"></div>
+
+</body>
+</html>

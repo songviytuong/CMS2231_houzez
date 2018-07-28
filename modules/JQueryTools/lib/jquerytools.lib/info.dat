@@ -1,0 +1,5 @@
+<?php
+$info['css'] = 'JQueryTools.css';
+$info['depends'] = 'tablesorter';
+$info['sorting'] = 99;
+?>

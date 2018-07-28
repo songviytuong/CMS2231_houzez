@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class GBFilePicker</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+
+<h2 class="class-name">Class GBFilePicker</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Main class of the GBFilePicker Module</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Georg Busch (NaN)</li>
+				<li><span class="field">version:</span> 1.3</li>
+				<li><span class="field">copyright:</span> 2010 Georg Busch (NaN)</li>
+				<li><span class="field">license:</span> GPL</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_GBFilePicker.module.php.html">/GBFilePicker.module.php</a> (line <span class="field"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a33">33</a></span>)
+		</p>
+		
+				
+		<pre>CMSModule
+   |
+   --GBFilePicker</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#CleanArray" title="details" class="method-name">CleanArray</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#CleanPath" title="details" class="method-name">CleanPath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$full_path</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#CleanURL" title="details" class="method-name">CleanURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$full_url</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#ContainsIllegalChars" title="details" class="method-name">ContainsIllegalChars</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#CreateFileDropdown" title="details" class="method-name">CreateFileDropdown</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$selected</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$file_ext</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$media_type</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_none</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$add_txt</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#CreateFilePickerInput" title="details" class="method-name">CreateFilePickerInput</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">&$module</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$returnid</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#CreateThumbnail" title="details" class="method-name">CreateThumbnail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#GetActionIcon" title="details" class="method-name">GetActionIcon</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#GetFileIcon" title="details" class="method-name">GetFileIcon</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$ext</span> = <span class="var-default">''</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$is_dir</span> = <span class="var-default">false</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$is_image</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#GetFiles" title="details" class="method-name">&amp;GetFiles</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$file_ext</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$media_type</span> = <span class="var-default">'image'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$excl_dirs</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$show_thumbfiles</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$create_thumbs</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#GetFileType" title="details" class="method-name">GetFileType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$use_mime</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#GetInputFiles" title="details" class="method-name">&amp;GetInputFiles</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#GetThemesList" title="details" class="method-name">GetThemesList</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#GetThumbnail" title="details" class="method-name">GetThumbnail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$create_thumb</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$urlonly</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#GetThumbnailSize" title="details" class="method-name">GetThumbnailSize</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#HandleFileResizing" title="details" class="method-name">HandleFileResizing</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$output</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$new_width</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$new_height</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$keep_aspectratio</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_upscaling</span> = <span class="var-default">false</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$quality</span> = <span class="var-default">100</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clean_path</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#IsDirEmpty" title="details" class="method-name">IsDirEmpty</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#IsFalse" title="details" class="method-name">IsFalse</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#IsTrue" title="details" class="method-name">IsTrue</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#IsVarEmpty" title="details" class="method-name">IsVarEmpty</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$var</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$trim</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$unset_empty_indexes</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#Loaded" title="details" class="method-name">Loaded</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#SetParameters" title="details" class="method-name">SetParameters</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#SortFiles" title="details" class="method-name">SortFiles</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">$file1</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$file2</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodCleanArray" id="CleanArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CleanArray</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1852">1852</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes empty elements from an array. <br />  (can be useful when using function explode to create the array from a csv)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - an array without empty elements or an empty array</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			CleanArray
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: - the array to clean up</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCleanPath" id="CleanPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">CleanPath</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1265">1265</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replaces all multiple DIRECTORY_SEPARATOR, dots and (multiple) slashes with one single DIRECTORY_SEPARATOR to make a clean secure path parameter</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the clean path</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			CleanPath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$full_path</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the path to clean</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$full_path</span><span class="var-description">: - true to prepend uploads path on return, false to return only the cleaned $path</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCleanURL" id="CleanURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CleanURL</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1292">1292</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replaces all multiple slashes, dots and (multiple) backslashes with one single slash to make a clean secure url parameter</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the clean url</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			CleanURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$full_url</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: - the url to clean</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$full_url</span><span class="var-description">: - true to prepend uploads url on return, false to return only the cleaned $url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodContainsIllegalChars" id="ContainsIllegalChars"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">ContainsIllegalChars</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1787">1787</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a filename contains illegal chars<br />  Taken from TinyMCE Module.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			ContainsIllegalChars
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: - the filename to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCreateFileDropdown" id="CreateFileDropdown"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateFileDropdown</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a978">978</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a dropdown form element containing a list of files that match certain conditions</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the HTML output of a select element with options</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			CreateFileDropdown
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$selected</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$file_ext</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$media_type</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_none</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$add_txt</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: - the id of the moduleinstance that creates the filepicker input</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the name of the input field</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: - the directory to list the files of (may be relative to uploads dir or absolute path)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$selected</span><span class="var-description">: - the preselected value</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$excl_prefix</span><span class="var-description">: - fileprefixes to exclude (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$incl_prefix</span><span class="var-description">: - fileprefixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$excl_sufix</span><span class="var-description">: - filesufixes to exclude (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$incl_sufix</span><span class="var-description">: - filesufixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$file_ext</span><span class="var-description">: - filesufixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$media_type</span><span class="var-description">: - file or image</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allow_none</span><span class="var-description">: - set to false to hide the option 'none'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$add_txt</span><span class="var-description">: - any additional text that will be added to the html input when tag is rendered</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCreateFilePickerInput" id="CreateFilePickerInput"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateFilePickerInput</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a400">400</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the filepicker input.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the HTML output of the filepicker</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			CreateFilePickerInput
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">&$module</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span> = <span class="var-default">''</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$returnid</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">&$module</span><span class="var-description">: - the module instance that calls the filepicker (this is only needed if you want to process own templates; pass the filepicker instance itself or leave it empty if you don't need this)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: - the id of the moduleinstance that creates the filepicker input</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the name of the input field</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the preselected value</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$params</span><span class="var-description">: - the input params (param_name =&gt; param_value):<br /><ul><li>(string)  'feu_access'               =&gt; a csv of group ids of the frontend users module,</li><li>(boolean) 'restrict_users_diraccess' =&gt; set to true if user may only access a dir of his username (notice: this has no effect if you are admin; in frontend this will always be true),</li><li>(string)  'header_template'          =&gt; specify wich template should be used to create the html output that will be placed in the &amp;lt;head&amp;gt; section (default is header.tpl of the selected theme of GBFilePickers preferences),</li><li>(string)  'input_template'           =&gt; specify wich template should be used to create the input elements (default is input.tpl of the selected theme of GBFilePickers preferences),</li><li>(string)  'upload_template'          =&gt; specify wich template should be used to create the upload form of mode dropdown (default is upload.tpl of the selected theme of GBFilePickers preferences),</li><li>(string)  'filebrowser_template'     =&gt; specify wich template should be used to create the filebrowser output (default is filebrowser.tpl of the selected theme of GBFilePickers preferences),</li><li>(string)  'prompt'                   =&gt; the prompt of the input field,</li><li>(string)  'media_type'               =&gt; the media type (at the moment only image / file are supported),</li><li>(mixed)   'file_extensions'          =&gt; an array or a csv of allowed file extensions,</li><li>(mixed)   'exclude_prefix'           =&gt; an array or a csv of file prefixes that will be excluded,</li><li>(mixed)   'exclude_sufix'            =&gt; an array or a csv of file suffixes that will be excluded,</li><li>(mixed)   'include_prefix'           =&gt; an array or a csv of file prefixes that will be included,</li><li>(mixed)   'include_sufix'            =&gt; an array or a csv of file suffixes that will be included,</li><li>(boolean) 'show_subdirs'             =&gt; set to true if user may browse subdirs (notice: this has no effect if you are admin)</li><li>(string)  'mode'                     =&gt; dropdown/browser,</li><li>(boolean) 'allow_none'               =&gt; set to false if the option &quot;none&quot; should not be shown (notice: this has no effect if you are admin),</li><li>(boolean) 'lock_input'               =&gt; set to false if user may enter the path in the inputfield ('mode'=&gt;'browser', 'media_type' =&gt; 'file') (notice: this has no effect if you are admin),</li><li>(boolean) 'upload'                   =&gt; set to true if user may upload files (notice: this has no effect if you are admin or have permission to modify files),</li><li>(boolean) 'delete'                   =&gt; set to true if user may delete files/dirs (notice: this has no effect if you are admin or have permission to modify files),</li><li>(boolean) 'create_dirs'              =&gt; set to true if user may create dirs (notice: this has no effect if you are admin or have permission to modify files),</li><li>(string)  'add_txt'                  =&gt; any additional text that will be added to the html input when tag is rendered,</li><li>(integer) 'size'                     =&gt; the size of the textinput ('mode' =&gt; 'browser', 'media_type' =&gt; 'file' only),</li><li>(integer) 'maxlength'                =&gt; the max length of the textinput ('mode' =&gt; 'browser', 'media_type' =&gt; 'file' only),</li><li>(integer) 'scaling_width'            =&gt; the default width of images when allow_scaling is true,</li><li>(integer) 'scaling_height'           =&gt; the default height of images when allow_scaling is true,</li><li>(boolean) 'show_thumbfiles'          =&gt; set to true if thumbs should also be shown as regular files,</li><li>(boolean) 'allow_scaling'            =&gt; set to false if user may not scale the images on upload,</li><li>(boolean) 'create_thumbs'            =&gt; set to false if the module may not create thumbs for the input,</li><li>(boolean) 'allow_upscaling'          =&gt; set to true if user may enlarge the images</li><li>(boolean) 'force_scaling'            =&gt; set to true to force resizing of image to a given size if user may not resize images</li><li>(boolean) 'keep_aspectratio'         =&gt; set to false to change aspect ratio to that one of the scaling size on resizing images</li></ul></span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$returnid</span><span class="var-description">: - the page id to return to and to print out the result after module has finished its task;<br />usually this has nothing to say but is required for frontend usage (must be an existing content id)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodCreateThumbnail" id="CreateThumbnail"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">CreateThumbnail</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1363">1363</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates the thumbnail of a given image file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - absolute path of the thumbnail</li>
+				<li><span class="field">since:</span> 1.2.9</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			CreateThumbnail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the path of the file to create a thumbnail from (can be relative to the uploads dir or absolute)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetActionIcon" id="GetActionIcon"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetActionIcon</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1428">1428</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the icon for the file operation. <br />  If FileManager is installed it uses FileManager icons. <br />  Otherwise it uses own icons<br /></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the HTML ouput of an image</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			GetActionIcon
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span><span class="var-description">: - the file operation (e.g. 'delete')</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetFileIcon" id="GetFileIcon"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetFileIcon</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1398">1398</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the icon for a file.<br />  If FileManager is installed it uses FileManager icons.<br />  Otherwise it uses own icons.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the HTML ouput of an image</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			GetFileIcon
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$ext</span> = <span class="var-default">''</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$is_dir</span> = <span class="var-default">false</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$is_image</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ext</span><span class="var-description">: - the file extension</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$is_dir</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$is_image</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetFiles" id="GetFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetFiles</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1063">1063</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return an array containing a list of files in a directory.<br />  Performs a non recursive search.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			&amp;GetFiles
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_prefix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$excl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$incl_sufix</span> = <span class="var-default">''</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$file_ext</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$media_type</span> = <span class="var-default">'image'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$excl_dirs</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$show_thumbfiles</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$create_thumbs</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: - the directory to list the files of (may be relative to uploads dir or absolute path)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$excl_prefix</span><span class="var-description">: - fileprefixes to exclude (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$incl_prefix</span><span class="var-description">: - fileprefixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$excl_sufix</span><span class="var-description">: - filesufixes to exclude (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$incl_sufix</span><span class="var-description">: - filesufixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$file_ext</span><span class="var-description">: - filesufixes to include (array('foo','bar',...) or csv)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$media_type</span><span class="var-description">: - file or image</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$excl_dirs</span><span class="var-description">: - set to true to exclude directories</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$show_thumbfiles</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$create_thumbs</span><span class="var-description">: = true</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetFileType" id="GetFileType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetFileType</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a929">929</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the file type of a file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the mime-type or file extension</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			GetFileType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$use_mime</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: - the path to a file</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$use_mime</span><span class="var-description">: - set to true to detect file type by mime type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetInputFiles" id="GetInputFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetInputFiles</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1032">1032</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return an array containing a list of files in a directory related to a certain input.<br />  Performs a non recursive search.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.1</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			&amp;GetInputFiles
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: - the id of the moduleinstance that creates the filepicker input</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the name of the input field</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: - the directory to list the files of (may be relative to uploads dir or absolute path)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetThemesList" id="GetThemesList"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetThemesList</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a2011">2011</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns a list of available themes</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the themes</li>
+				<li><span class="field">since:</span> 1.2.9</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			GetThemesList
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodGetThumbnail" id="GetThumbnail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetThumbnail</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1320">1320</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the thumbnail of a given image file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - HTML img element or url</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			GetThumbnail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$create_thumb</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$urlonly</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the path of the file to create a thumbnail of (can be relative to the uploads dir or absolute)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$create_thumb</span><span class="var-description">: - set to false if thumbnail may not be created if not exists</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$urlonly</span><span class="var-description">: - set to true to get only the url to the thumbnail</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodGetThumbnailSize" id="GetThumbnailSize"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">GetThumbnailSize</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1694">1694</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the calculated size of the thumbnail<br /></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - array(width,height)</li>
+				<li><span class="field">since:</span> 1.2</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			GetThumbnailSize
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the source path of the image</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodHandleFileResizing" id="HandleFileResizing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">HandleFileResizing</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1504">1504</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">resizes images<br />  Adapted from TinyMCE filepicker.</p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> enable format change?</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			HandleFileResizing
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$output</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$new_width</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$new_height</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$keep_aspectratio</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_upscaling</span> = <span class="var-default">false</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$quality</span> = <span class="var-default">100</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clean_path</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: - the source path of the image</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$output</span><span class="var-description">: - the destination path of the resized image</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$new_width</span><span class="var-description">: - the new wdth to scale the image to (if $keep_aspectratio is set to true this will be just some kind of max value)</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$new_height</span><span class="var-description">: - the new height to scale the image to (if $keep_aspectratio is set to true this will be just some kind of max value)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$keep_aspectratio</span><span class="var-description">: - set to false if image aspect ratio may be changed</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allow_upscaling</span><span class="var-description">: - set to true if user may enlarge the image</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$quality</span><span class="var-description">: - the quality of the new image (jpg only)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$clean_path</span><span class="var-description">: - set to false if source is the upload_tmp_dir</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodIsDirEmpty" id="IsDirEmpty"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">IsDirEmpty</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1450">1450</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a directory is empty<br />  Taken from TinyMCE Module (extracted from filepicker).</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			IsDirEmpty
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: - the path to a directory</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodIsFalse" id="IsFalse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">IsFalse</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1910">1910</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a value is really meant to be &quot;false&quot;. <br />  Can be usefull when checking smarty params for the value false</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			IsFalse
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodIsTrue" id="IsTrue"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">IsTrue</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1894">1894</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a value is really meant to be &quot;true&quot;. <br />  Can be usefull when checking smarty params for the value true</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			IsTrue
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to check</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodIsVarEmpty" id="IsVarEmpty"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">IsVarEmpty</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1812">1812</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if a var is empty. <br />  If $var is an array it recursivley checks all elements.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - true if empty, false if not</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			IsVarEmpty
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$var</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$trim</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$unset_empty_indexes</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">&$var</span><span class="var-description">: - the var to check for empty value(s)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$trim</span><span class="var-description">: - true to trim off spaces</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$unset_empty_indexes</span><span class="var-description">: - true to delete empty elements from array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodLoaded" id="Loaded"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Loaded</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1925">1925</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Indicates if GBFilePicker output is already done<br />  can be useful to avoid ouput of javascript and css twice</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - true if output done; false if not</li>
+				<li><span class="field">since:</span> 1.1</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			Loaded
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodSetParameters" id="SetParameters"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">SetParameters</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a292">292</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">link:</span> <a href="http://www.cmsmadesimple.org/apidoc/CMS/CMSModule.html#SetParameters">http://www.cmsmadesimple.org/apidoc/CMS/CMSModule.html#SetParameters</a></li>
+				<li><span class="field">todo:</span> create list of allowed parameters!</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SetParameters
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodSortFiles" id="SortFiles"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">SortFiles</span> (line <span class="line-number"><a href="../__filesource/fsource_CMSModule__GBFilePicker.module.php.html#a1479">1479</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sorts the files by filename; shows directories first<br />  this function is meant to be called from the php usort() function: usort($array,array($this,'SortFiles')<br />  Taken from TinyMCE filepicker.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> -1 or 1</li>
+				<li><span class="field">since:</span> 1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			SortFiles
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">$file1</span>, <span class="var-type">object</span>&nbsp;<span class="var-name">$file2</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$file1</span><span class="var-description">: - one file to compare <br />a php stdClass with properties (boolean) $is_dir - a flag that specifys if it is a dir or a file;<br />(string) $basename - the basename of the file;</span>			</li>
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$file2</span><span class="var-description">: - the other file to compare <br />a php stdClass with properties (boolean) $is_dir - a flag that specifys if it is a dir or a file;<br />(string) $basename - the basename of the file;</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 23 Feb 2011 21:38:09 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.0a2</a>
+	</p>
+	</div></body>
+</html>

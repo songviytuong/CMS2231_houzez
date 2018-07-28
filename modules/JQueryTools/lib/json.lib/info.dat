@@ -1,0 +1,5 @@
+<?php
+$info['js'] = 'jquery.json-2.4.min.js';
+$info['depends'] = 'jquery';
+$info['js_nominify'] = 1;
+?>

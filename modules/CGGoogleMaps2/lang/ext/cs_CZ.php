@@ -1,0 +1,68 @@
+<?php
+$lang['address'] = 'Adresa';
+$lang['add_map'] = 'Přidat mapu';
+$lang['add_map_point'] = 'Přidat bod do mapy';
+$lang['add_point_for_map'] = 'Přidat bod do mapy &quot;%s&quot;';
+$lang['cancel'] = 'Storno';
+$lang['center_lat'] = 'Zeměpisn&aacute; &scaron;&iacute;řka středu';
+$lang['center_lon'] = 'Zeměpisn&aacute; d&eacute;lka středu';
+$lang['changelog'] = '<ul>
+<li>1.0 - December, 2007
+  <p>Initial Release</p></ul>
+</ul>';
+$lang['click'] = 'Klik';
+$lang['controls'] = 'Ovl&aacute;dac&iacute; prvky';
+$lang['controls_size'] = 'Velikost ovl&aacute;dac&iacute;ch prvků';
+$lang['default'] = 'V&yacute;choz&iacute;';
+$lang['delete_map'] = 'Smazat mapu';
+$lang['delete_map_point'] = 'Smazat bod mapy';
+$lang['description'] = 'Popisek';
+$lang['directions'] = 'Uk&aacute;zat směry';
+$lang['edit_map'] = 'Upravit mapu';
+$lang['edit_map_point'] = 'Upravit bod mapy';
+$lang['edit_map_points'] = 'Upravit body mapy';
+$lang['edit_points_for_map'] = 'Upravit body mapy pro mapu &quot;%s&quot;';
+$lang['error_invalidparams'] = 'Minim&aacute;lně jeden parametr chyb&iacute;, nebo je neplatn&yacute;';
+$lang['error_noapikey'] = 'Google API kl&iacute;č je neplatn&yacute;';
+$lang['error_permissiondenied'] = 'Pro proveden&iacute; t&eacute;to akce nem&aacute;te dostatečn&aacute; opr&aacute;vněn&iacute;';
+$lang['friendlyname'] = 'Calguyovy Google mapy';
+$lang['google_api_key'] = 'Google API kl&iacute;č';
+$lang['height'] = 'V&yacute;&scaron;ka';
+$lang['help_param_map'] = 'Určete ID nebo jm&eacute;no mapy, kterou chcete zobrazit.';
+$lang['hybrid'] = 'Hybridn&iacute;';
+$lang['id'] = 'Id';
+$lang['info_address_latlong'] = 'Pozn&aacute;mka: Vložte <strong>buď</strong> adresu <strong>nebo</strong> zeměpisnou v&yacute;&scaron;ku a d&eacute;lku. Pokud zad&aacute;te jak adresu, tak souřadnice, bude d&aacute;na přednost souřadnic&iacute;m.';
+$lang['info_window'] = 'Uk&aacute;zat informačn&iacute; bublinu';
+$lang['info_trigger'] = 'Spou&scaron;těč informačn&iacute;ch bublin';
+$lang['large'] = 'Velk&eacute;';
+$lang['latitude'] = 'Zeměpisn&aacute; &scaron;&iacute;řka';
+$lang['location'] = 'Poloha';
+$lang['longitude'] = 'Zeměpisn&aacute; d&eacute;lka';
+$lang['map'] = 'Mapa';
+$lang['maps'] = 'Mapy';
+$lang['map_name'] = 'Jm&eacute;no mapy';
+$lang['moddescription'] = 'Jednoduch&yacute; modul pro vytv&aacute;řen&iacute; Google map';
+$lang['mouseover'] = 'MouseOver';
+$lang['name'] = 'Jm&eacute;no';
+$lang['points'] = 'Bodů';
+$lang['point_name'] = 'Jm&eacute;no bodu';
+$lang['postinstall'] = 'Modul Calguyovy Google mapy byl nainstalov&aacute;n';
+$lang['postuninstall'] = 'Modul Claguyovy Google mapy byl odebr&aacute;n (a v&scaron;echna s n&iacute;m souvisej&iacute;c&iacute; data)';
+$lang['preferences'] = 'Nastaven&iacute;';
+$lang['really_uninstall'] = 'Opravdu chcete odebrat tento modul?';
+$lang['satellite'] = 'Satelitn&iacute;';
+$lang['set_dflt_map'] = 'Nastavit tuto mapu jako v&yacute;choz&iacute;';
+$lang['sidebar'] = 'Uk&aacute;zat postrann&iacute; li&scaron;tu';
+$lang['small'] = 'Mal&aacute;';
+$lang['submit'] = 'Vložit';
+$lang['text'] = 'Text';
+$lang['type'] = 'Typ';
+$lang['type_controls'] = 'Uk&aacute;zat ukazatele typu mapy';
+$lang['width'] = '&Scaron;&iacute;řka';
+$lang['zoom'] = '&Uacute;roveň přibl&iacute;žen&iacute;';
+$lang['zoom_encompass'] = 'Zoom Encompass';
+$lang['utmz'] = '156861353.1214593225.218.41.utmccn=(referral)|utmcsr=forum.cmsmadesimple.org|utmcct=/index.php/topic,22814.msg113105/boardseen.html|utmcmd=referral';
+$lang['utma'] = '156861353.1608855210.1167908109.1214746662.1214749612.222';
+$lang['utmc'] = '156861353';
+$lang['utmb'] = '156861353';
+?>

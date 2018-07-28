@@ -1,0 +1,1 @@
+{$fielddef->ModLang('fielddef_users')}: {$users|count}

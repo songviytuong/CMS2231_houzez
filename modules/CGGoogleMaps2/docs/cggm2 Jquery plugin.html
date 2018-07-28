@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>cggm2 Jquery plugin</title>
+    <style type="text/css">
+html {  
+  color: black;  
+  background-color: white;  
+  background-image: none;  
+  background-repeat: repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {  
+  margin-top: 0px;  
+  margin-right: 0px;  
+  margin-bottom: 0px;  
+  margin-left: 0px;  
+  padding-top: 0px;  
+  padding-right: 0px;  
+  padding-bottom: 0px;  
+  padding-left: 0px;
+}
+
+table {  
+  border-collapse: collapse;  
+  border-spacing: 0px;
+}
+
+fieldset, img {  
+  border-top-width: 0px;  
+  border-right-width: 0px;  
+  border-bottom-width: 0px;  
+  border-left-width: 0px;  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {  
+  font-style: normal;  
+  font-weight: normal;
+}
+
+li {  
+  list-style-type: none;  
+  list-style-position: outside;  
+  list-style-image: none;
+}
+
+caption, th {  
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {  
+  font-size: 100%;  
+  font-weight: normal;
+}
+
+q:before, q:after {  
+  content: "";
+}
+
+abbr, acronym {  
+  border-top-width: 0px;  
+  border-right-width: 0px;  
+  border-bottom-width: 0px;  
+  border-left-width: 0px;  
+  border-top-style: none;  
+  border-right-style: none;  
+  border-bottom-style: none;  
+  border-left-style: none;  
+  font-variant: normal;
+}
+
+sup {  
+  vertical-align: text-top;
+}
+
+sub {  
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+}
+
+input, textarea, select {
+}
+
+legend {  
+  color: black;
+}
+
+del, ins {  
+  text-decoration: none;
+}
+
+body {  
+  font-style: normal;  
+  font-variant: normal;  
+  font-weight: normal;  
+  font-size: 13px;  
+  line-height: 1.231;  
+  font-family: arial, helvetica, clean, sans-serif;
+}
+
+select, input, button, textarea {
+}
+
+table {
+}
+
+pre, code, kbd, samp, tt {  
+  font-family: monospace;  
+  line-height: 100%;
+}
+
+body {  
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2em;
+  text-decoration: underline;
+}
+      
+#ft {  
+  clear: both;
+}
+
+#doc, #doc2, #doc3, #doc4, .yui-t1, .yui-t2, .yui-t3, .yui-t4, .yui-t5, .yui-t6, .yui-t7 {  
+  margin-top: auto;  
+  margin-right: auto;  
+  margin-bottom: auto;  
+  margin-left: auto;  
+  text-align: left;  
+  width: 57.69em;  
+  min-width: 750px;
+}
+
+#doc2 {  
+  width: 73.076em;
+}
+
+#doc3 {  
+  margin-top: auto;  
+  margin-right: 10px;  
+  margin-bottom: auto;  
+  margin-left: 10px;  
+  width: auto;
+}
+
+#doc4 {  
+  width: 74.923em;
+}
+
+.yui-b {  
+  position: relative;
+}
+
+.yui-b {
+}
+
+#yui-main .yui-b {  
+  position: static;
+}
+
+#yui-main, .yui-g .yui-u .yui-g {  
+  width: 100%;
+}
+
+.yui-t1 #yui-main, .yui-t2 #yui-main, .yui-t3 #yui-main {  
+  float: right;  
+  margin-left: -25em;
+}
+
+.yui-t4 #yui-main, .yui-t5 #yui-main, .yui-t6 #yui-main {  
+  float: left;  
+  margin-right: -25em;
+}
+
+.yui-t1 .yui-b {  
+  float: left;  
+  width: 12.3077em;
+}
+
+.yui-t1 #yui-main .yui-b {  
+  margin-left: 13.3077em;
+}
+
+.yui-t2 .yui-b {  
+  float: left;  
+  width: 13.8461em;
+}
+
+.yui-t2 #yui-main .yui-b {  
+  margin-left: 14.8461em;
+}
+
+.yui-t3 .yui-b {  
+  float: left;  
+  width: 23.0769em;
+}
+
+.yui-t3 #yui-main .yui-b {  
+  margin-left: 24.0769em;
+}
+
+.yui-t4 .yui-b {  
+  float: right;  
+  width: 13.8456em;
+}
+
+.yui-t4 #yui-main .yui-b {  
+  margin-right: 14.8456em;
+}
+
+.yui-t5 .yui-b {  
+  float: right;  
+  width: 18.4615em;
+}
+
+.yui-t5 #yui-main .yui-b {  
+  margin-right: 19.4615em;
+}
+
+.yui-t6 .yui-b {  
+  float: right;  
+  width: 23.0769em;
+}
+
+.yui-t6 #yui-main .yui-b {  
+  margin-right: 24.0769em;
+}
+
+.yui-t7 #yui-main .yui-b {  
+  display: block;  
+  margin-top: 0px;  
+  margin-right: 0px;  
+  margin-bottom: 1em;  
+  margin-left: 0px;
+}
+
+#yui-main .yui-b {  
+  float: none;  
+  width: auto;
+}
+
+.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {  
+  float: left;
+}
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf, .yui-gc .yui-u, .yui-gd .yui-g, .yui-g .yui-gc .yui-u, .yui-ge .yui-u, .yui-ge .yui-g, .yui-gf .yui-g, .yui-gf .yui-u {  
+  float: right;
+}
+
+.yui-g div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first, .yui-ge div.first, .yui-gf div.first, .yui-g .yui-gc div.first, .yui-g .yui-ge div.first, .yui-gc div.first div.first {  
+  float: left;
+}
+
+.yui-g .yui-u, .yui-g .yui-g, .yui-g .yui-gb, .yui-g .yui-gc, .yui-g .yui-gd, .yui-g .yui-ge, .yui-g .yui-gf {  
+  width: 49.1%;
+}
+
+.yui-gb .yui-u, .yui-g .yui-gb .yui-u, .yui-gb .yui-g, .yui-gb .yui-gb, .yui-gb .yui-gc, .yui-gb .yui-gd, .yui-gb .yui-ge, .yui-gb .yui-gf, .yui-gc .yui-u, .yui-gc .yui-g, .yui-gd .yui-u {  
+  width: 32%;  
+  margin-left: 1.99%;
+}
+
+.yui-gb .yui-u {
+}
+
+.yui-gc div.first, .yui-gd .yui-u {  
+  width: 66%;
+}
+
+.yui-gd div.first {  
+  width: 32%;
+}
+
+.yui-ge div.first, .yui-gf .yui-u {  
+  width: 74.2%;
+}
+
+.yui-ge .yui-u, .yui-gf div.first {  
+  width: 24%;
+}
+
+.yui-g .yui-gb div.first, .yui-gb div.first, .yui-gc div.first, .yui-gd div.first {  
+  margin-left: 0px;
+}
+
+.yui-g .yui-g .yui-u, .yui-gb .yui-g .yui-u, .yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u, .yui-ge .yui-g .yui-u, .yui-gf .yui-g .yui-u {  
+  width: 49%;
+}
+
+.yui-g .yui-g .yui-u {  
+  width: 48.1%;
+}
+
+.yui-g .yui-gb div.first, .yui-gb .yui-gb div.first {
+}
+
+.yui-g .yui-gc div.first, .yui-gd .yui-g {  
+  width: 66%;
+}
+
+.yui-gb .yui-g div.first {
+}
+
+.yui-gb .yui-gc div.first, .yui-gb .yui-gd div.first {
+}
+
+.yui-gb .yui-gb .yui-u, .yui-gb .yui-gc .yui-u {
+}
+
+.yui-g .yui-gb .yui-u {
+}
+
+.yui-gb .yui-gd .yui-u {
+}
+
+.yui-gb .yui-gd div.first {
+}
+
+.yui-g .yui-gc .yui-u, .yui-gb .yui-gc .yui-u {  
+  width: 32%;  
+  margin-right: 0px;
+}
+
+.yui-gb .yui-gc div.first {  
+  width: 66%;
+}
+
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf .yui-u {  
+  margin-top: 0px;  
+  margin-right: 0px;  
+  margin-bottom: 0px;  
+  margin-left: 0px;
+}
+
+.yui-gb .yui-gb .yui-u {
+}
+
+.yui-gb .yui-g div.first, .yui-gb .yui-gb div.first {
+}
+
+.yui-gc .yui-g .yui-u, .yui-gd .yui-g .yui-u {
+}
+
+.yui-gb .yui-gd div.first {  
+  width: 32%;
+}
+
+.yui-g .yui-gd div.first {
+}
+
+.yui-ge .yui-g {  
+  width: 24%;
+}
+
+.yui-gf .yui-g {  
+  width: 74.2%;
+}
+
+.yui-gb .yui-ge div.yui-u, .yui-gb .yui-gf div.yui-u {  
+  float: right;
+}
+
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf div.first {  
+  float: left;
+}
+
+.yui-gb .yui-ge .yui-u, .yui-gb .yui-gf div.first {
+}
+
+.yui-gb .yui-ge div.first, .yui-gb .yui-gf .yui-u {
+}
+
+.yui-ge div.first .yui-gd .yui-u {  
+  width: 65%;
+}
+
+.yui-ge div.first .yui-gd div.first {  
+  width: 32%;
+}
+
+#bd:after, .yui-g:after, .yui-gb:after, .yui-gc:after, .yui-gd:after, .yui-ge:after, .yui-gf:after {  
+  content: ".";  
+  display: block;  
+  height: 0px;  
+  clear: both;  
+  visibility: hidden;
+}
+
+#bd, .yui-g, .yui-gb, .yui-gc, .yui-gd, .yui-ge, .yui-gf {
+}
+
+</style><style type="text/css">/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong{font-weight:bold;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;} em{font-style:italic;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}p,fieldset,table,pre{margin-bottom:1em;}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em;}
+</style><meta content="Robert Campbell" name="author">
+    <meta content="Documentation for the cggm2 jquery plugin for CGGoogleMaps2 (a CMSMS module)"
+      name="description">
+    <meta content="google maps cms made simple CGGoogleMaps2 calguy1000" name="keywords">
+    <meta content="BlueGriffon wysiwyg editor" name="generator">
+  </head>
+  <body>
+    <div class="yui-t7" id="doc2">
+      <div style="text-align: center;" id="hd">
+        <h1>cggm2 Plugin Reference</h1>
+        <p><span style="font-style: italic;">A jquery ui plugin to aide in
+            building google maps within CMSMS.</span></p>
+      </div>
+      <div id="bd">
+        <div class="yui-gf">
+          <div class="yui-u first">
+            <h2>Table Of Contents</h2>
+            <ol style="list-style-type: lower-roman;">
+              <li><a href="#a_introduction">Introduction</a></li>
+              <li><a href="#a_features">Features</a></li>
+              <li><a href="#a_license">License</a></li>
+              <li><a href="#a_support">Support</a><span style=" text-decoration: underline;"><span
+                    style=" color: #0000ee;"><span style=" font-weight: bold;"><br>
+                    </span></span></span></li>
+              <li><a href="#a_dependencies">Dependencies</a></li>
+              <li><a href="#a_usage">Usage</a></li>
+              <li><a href="#a_methods">Methods</a>
+                <ol style="list-style-type: lower-roman;">
+                  <li><a href="#am_getmap"><span style="text-decoration: underline;">getMap</span></a></li>
+                  <li><a href="#am_addmarker"><span style=" text-decoration: underline;">addMarker</span></a></li>
+                  <li><a href="#am_getmarker"><span style="  text-decoration: underline;">getMarker</span></a></li>
+                  <li><a href="#am_getmarkerlist"><span style="   text-decoration: underline;">getMarkerList</span></a></li>
+                  <li><a href="#am_removemarker"><span style="    text-decoration: underline;">removeMarker</span></a></li>
+                  <li><a href="#am_removeallmarkers"><span style="     text-decoration: underline;">removeAllMarkers</span></a></li>
+                  <li><a href="#am_getdirections"><span style="      text-decoration: underline;">getDirections</span></a></li>
+                  <li><a href="#am_pantomarker"><span style="       text-decoration: underline;">panTomarker</span></a></li>
+                  <li><a href="#am_showinfowindow"><span style="        text-decoration: underline;">showInfoWindow</span></a></li>
+                  <li><a href="#am_refresh"><span style="         text-decoration: underline;">refresh</span></a></li>
+                  <li><a href="#am_removeallkmllayers"><span style="          text-decoration: underline;">removeAllKmlLayers</span></a></li>
+                  <li><a href="#am_addkmllayer"><span style="           text-decoration: underline;">addKmlLayer</span></a></li>
+                  <li><span style="            text-decoration: underline;"><a href="#am_addicon">addIcon</a><br>
+                    </span></li>
+                </ol>
+              </li>
+              <li><a href="#a_options">Options</a>
+              <ol style="list-style-type: lower-roman;">
+                <li><a href="#ao_center"><span style="text-decoration: underline;">center</span></a></li>
+                <li><a href="#ao_default_icon"><span style=" text-decoration: underline;">default_icon</span></a></li>
+                <li><a href="#ao_directions"><span style="  text-decoration: underline;">directions</span></a></li>
+                <li><a href="#ao_directions_draw"><span style="    text-decoration: underline;">directions_draw</span></a></li>
+                <li><a href="#ao_directions_panel">directions_panel</a><span style="     text-decoration: underline;"><br>
+                  </span></li>
+                <li><a href="#ao_directions_units"><span style="     text-decoration: underline;">directions_units</span></a></li>
+                <li><a href="#ao_icons"><span style="      text-decoration: underline;">icons</span></a></li>
+                <li><a href="#ao_idle_cb"><span style="       text-decoration: underline;">idle_cb</span></a></li>
+                <li><a href="#ao_infowindow"><span style="        text-decoration: underline;">infowindow</span></a></li>
+                <li><a href="#ao_infowindow_boxclass"><span style="         text-decoration: underline;">infowindow_boxClass</span></a></li>
+                <li><a href="#ao_infowindow_trigger"><span style="          text-decoration: underline;">infowindow_trigger</span></a></li>
+                <li><a href="#ao_infowindow_cb"><span style="           text-decoration: underline;">infowindow_cb</span></a></li>
+                <li><a href="#ao_infowindow_content_cb"><span style="            text-decoration: underline;">infowindow_content_cb</span></a></li>
+                <li><a href="#ao_kml"><span style="             text-decoration: underline;">kml</span></a></li>
+                <li><a href="#ao_markers"><span style="              text-decoration: underline;">markers</span></a></li>
+                <li><a href="#ao_marker_click_cb"><span style="               text-decoration: underline;">marker_click_cb</span></a></li>
+                <li><a href="#ao_marker_mouseover_cb"><span style="                text-decoration: underline;">marker_mouseover_cb</span></a></li>
+                <li><a href="#ao_marker_mouseout_cb"><span style="                 text-decoration: underline;">marker_mouseout_cb</span></a></li>
+                <li><a href="#ao_mylocationstr"><span style="                   text-decoration: underline;">mylocationstr</span></a></li>
+                <li><a href="#ao_nav_controls"><span style="                    text-decoration: underline;">nav_controls</span></a></li>
+                <li><a href="#ao_scale_controls"><span style="                     text-decoration: underline;">scale_controls</span></a></li>
+                <li><a href="#ao_sensor"><span style="                      text-decoration: underline;">sensor</span></a></li>
+                <li><a href="#ao_sensor_center"><span style="                       text-decoration: underline;">sensor_center</span></a></li>
+                <li><a href="#ao_sensor_marker"><span style="                        text-decoration: underline;">sensor_marker</span></a></li>
+                <li><span style="                         text-decoration: underline;"><a
+                      href="#ao_sensor_icon">sensor_icon</a><br>
+                  </span></li>
+                <li><a href="#ao_sv_controls"><span style="                         text-decoration: underline;">sv_controls</span></a></li>
+                <li><a href="#ao_tooltip"><span style="                           text-decoration: underline;">tooltip</span></a></li>
+                <li><a href="#ao_tooltip_Class"><span style="                            text-decoration: underline;">tooltip_Class</span></a></li>
+                <li><a href="#ao_type"><span style="                             text-decoration: underline;">type</span></a></li>
+                <li><a href="#ao_type_controls"><span style="                              text-decoration: underline;">type_controls</span></a></li>
+                <li><a href="#ao_type_control_options"><span style="                               text-decoration: underline;">type_control_option</span></a></li>
+                <li><a href="#ao_zoom"><span style="                                 text-decoration: underline;">zoom</span></a></li>
+                <li><a href="#ao_zoomcontrol"><span style="                                  text-decoration: underline;">zoom<span
+                        style="font-weight: bold;">C</span>ontrol</span></a></li>
+                <li><a href="#ao_zoomcontroloptions"><span style="                                   text-decoration: underline;">zoomControlOptions</span></a></li>
+                <li><span style="                                    text-decoration: underline;"><a
+                      href="#ao_zoom_encompass">zoom_encompass</a><br>
+                  </span></li>
+              </ol>
+              </li>
+              <li><a href="#a_events">Events</a></li>
+              <li><a href="#a_markerobject"><span style="color: black;"><span style="font-weight: bold;"></span></span>The
+                  MarkerOptions Object</a></li>
+              <li><a href="#a_iconobject">The Icon Object</a></li>
+              <li><a href="#a_kmlobject">The KML Object</a></li>
+              <li><a href="#a_nearfuture">The Near Future</a></li>
+              <li><a href="#a_examples">Examples</a></li>
+              <li><a href="#a_credits">Credits</a></li>
+            </ol>
+            <p><br>
+            </p>
+            <p><br>
+            </p>
+            <p><br>
+            </p>
+            <p><br>
+            </p>
+            <p><br>
+            </p>
+          </div>
+          <h2><a id="a_introduction">Introduction:</a></h2>
+          <p>This plugin is included with the CGGoogleMaps2 module for CMS Made
+            Simple.&nbsp;&nbsp; It is a plugin written using the jquery ui
+            widget factory to aide in building and interacting with google maps.</p>
+          <p>This plugin in conjunction with the dynamic nature of CMS Made
+            Simple, Smarty templates, and the flexible way in which markers can
+            be extracted from CMSMS Modules allows building flexible and dynamic
+            maps.</p>
+          <p>This document describes the cggm2 jquery plugin and how to interact
+            with it in pure html/javascript.&nbsp; It does not really touch on
+            the behavior of the CGGoogleMaps2 module that wraps this plugin.</p>
+          <h2><a id="a_features">Features</a>:</h2>
+          <ul>
+            <li><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;">Multiple
+                  independent maps on one page</span></span></li>
+            <li>Dynamic Markers</li>
+            <li>Automatic Centering (optional)</li>
+            <li>Streetview controls</li>
+            <li>Tooltips that can be styled and contain HTML</li>
+            <li>Flexible InfoWindow that can be styled and contain HTML</li>
+            <li>Create markers from HTML</li>
+            <li>geolocation (sensor) support</li>
+            <li>Flexible Icon mechanism</li>
+            <li>KML Overlays</li>
+            <li>Pan to Marker via javascript</li>
+            <li>Dynamically open info-windows</li>
+            <li>Dynamic Directions</li>
+          </ul>
+          <h2><a id="a_license">License:</a></h2>
+          <h2><a id="a_support">Support:</a></h2>
+          <h2><a id="a_dependencies">Dependencies</a>:</h2>
+          <ol>
+            <li>Jquery</li>
+            <li>The google maps API with the geometry library, and sensor
+              support.</li>
+            <li>jquery-ui (widget factory)</li>
+            <li>map_tooltip.js<span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;">
+                  (this provides the extended tooltip functionality for hovering
+                  over markers)<br>
+                </span></span></li>
+            <li>infobox plugin (provides a stylable infowindow)</li>
+          </ol>
+          <h2><a id="a_usage">Usage</a>:</h2>
+          <p>Usage of this plugin is simple and straight forward.&nbsp; There
+            are only 3 basic steps:</p>
+          <ol>
+            <li>Include the required javascript libraries
+              <p>The libraries can be included from a CDN, or downloaded locally
+                and stored on your server.&nbsp; The required libraries are:</p>
+              <ol>
+                <li>jquery 1.10+</li>
+                <li>jquery-ui 1.11+</li>
+                <li>jquery.cggm_map.js&nbsp; (this is shipped with the
+                  CGGoogleMaps2 module and is located in the module's lib/js
+                  directory)</li>
+                <li>infobox.packed.js (this is also distributed with the
+                  CGGoogleMaps2 module and is located in the module's lib/js
+                  directory)</li>
+                <li>map_tooltip.js (also distributed with CGGoogleMaps2).</li>
+              </ol>
+            </li>
+            <li>Create a div of the appropriate size to hold your map.</li>
+            <li>Initialize the cggm2 plugin, creating at least one marker, or a
+              center coordinate.</li>
+          </ol>
+          <div style="margin-left: 40px;">Initializing the plugin is done via
+            the standard jquery mechanism.&nbsp; i.e:&nbsp;<code> $(<span style="color: #33ccff;">'selector'</span>).cggm2(<span
+                style="color: #33ccff;">options</span>);</code></div>
+          <ol>
+          </ol>
+          <div style="margin-left: 40px;"><strong>Note</strong>:&nbsp; Though it
+            is possible to initialize the map with no markers or center
+            coordinate, the map may be centered around latitude and longitude 0.<br>
+            <br>
+          </div>
+          <p><a href="tests/test1.html">Test1</a> illustrates creating a simple
+            map with a single point.&nbsp;&nbsp; To see how this is done, you
+            can view the page's source code.</p>
+          <h3>Calling plugin methods:</h3>
+          <p>The cggm2 plugin has numerous methods to interact with the
+            map.&nbsp;&nbsp; To call a method in the plugin you use this
+            syntax:&nbsp; <code><span style="font-family: arial,helvetica,clean,sans-serif;"><span
+                  style="font-weight: bold;"><span style="font-family: monospace;"></span></span></span>$(<span
+                style="color: #33ccff;">'selector'</span>).cggm2('<span style="color: #ff9900;">method</span>'[,argument1[,argument2]]);</code></p>
+          <p><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;"></span></span>
+          </p>
+          <h3>Retrieving plugin options:</h3>
+          <p>Retrieving the value of an option after construction can be
+            achieved by calling the 'option' method, with a syntax such as:</p>
+          <pre><code><span>$('<span style="color: #33ccff;">selector</span>').cggm2('<span
+style="color: #ff9900;">option</span>','<span style="color: #33cc00;">name</span>');</span></code><br><span
+style="font-family: arial,helvetica,clean,sans-serif;"><br>The type of the return value depends on the name of the option you are retrieving.<br></span></pre>
+          <h3>Changing plugin options:</h3>
+          <p>Adjusting an option in the plugin after construction can be done by
+            calling the 'option' method, with a syntax such as: </p>
+          <p> <code>$('<span style="color: #33ffff;">selector</span>').cggm2('<span
+                style="color: #ff9900;">option</span>','<span style="color: #33cc00;">name</span>',<span
+                style="color: red;">value</span>);</code></p>
+          <p><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;">The
+                type of the value depends upon the option you are setting.&nbsp;
+                See the documentation below for the specific options.&nbsp; It
+                is possible for the map to break or misbehave if invalid data is
+                specified in an option.&nbsp;&nbsp; The map may update to
+                represent the changed option.</span></span></p>
+          <h3><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;">Adding
+                Static Markers:</span></span></h3>
+          The cggm2 jquery plugin allows creating map markers from statically
+          coded HTML. This allows creating markers in a variety of ways (i.e:
+          dynamically extracting data from the database, outputting relevant
+          data to HTML to be displayed on a map. It is very straight forward to
+          do.<br>
+          <ol>
+            <li>&nbsp;Create a div with the class cggm2_markers directly after
+              your map div.</li>
+            <li>For each static marker that you would like to create create a
+              new div with the class cggm2_marker within the div created above.</li>
+            <li>create a series of hidden input elements with the classes
+              cggm2_marker_name, cggm2_marker_title, cggm2_marker_description,
+              cggm2_marker_latitude, cggm2_marker_longitude, and
+              cggm2_marker_icon to hold the respective data.</li>
+          </ol>
+          <p>You should see something like this:</p>
+          <pre>&lt;<span style="color: #3366ff;">div</span> id="map"&gt;&lt;<span
+style="color: #3366ff;">/div</span>&gt;<br><span style="font-family: arial,helvetica,clean,sans-serif;">  </span> &lt;<span
+style="color: #3366ff;">div</span> class="<span style="color: #ff9900;">cggm2_markers</span>" <span
+style="color: red;">style="display: none;"</span>&gt;<br>  &lt;<span style="color: #3366ff;">div</span> class="<span
+style="color: #ff9900;">cggm2_marker</span>"&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_name</span>" value="marker_1"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_title</span>" value="Calgary"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_description</span>" value="The Oil and Gas capitol of Canada"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_latitude</span>" value="51.0500"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_longitude</span>" value="-114.0667"/&gt;<br>  &lt;/<span
+style="color: #3366ff;">div</span>&gt;<br>  &lt;<span style="color: #3366ff;">div</span> class="<span
+style="color: #ff9900;">cggm2_marker</span>"&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_name</span>" value="marker_2"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_title</span>" value="Edmonton"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_description</span>" value="The capitol of the province of Alberta"/&gt;<br>    &lt;input type="hidden" class="<span
+style="color: #ff9900;">cggm2_marker_latitude</span>" value="53.5333"/&gt;
+  &nbsp; &lt;input type="hidden" class="<span style="color: #ff9900;">cggm2_marker_longitude</span>" value="-113.5000"&gt;<br>&nbsp; &lt;<span
+style="color: #3366ff;">/div</span>&gt;<br>&lt;<span style="color: #3366ff;">/div</span>&gt;</pre>
+          You can see a working example of building a map from static HTML in <a
+            href="tests/test4.html">Test4</a>.<br>
+          <h2><a id="a_methods">Methods</a>:</h2>
+          <h4><a id="am_getmap">getMap:</a></h4>
+          <p>This method returns the google Map object used internally by the
+            cggm2 plugin.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <p style="margin-left: 40px;"><code><span>var map = $('<span style="color: #33ccff;">#map</span>').cggm2('<span
+                  style="color: #ff9900;">getMap</span>');</span></code></p>
+          <h4><a id="am_addmarker">addMarker:</a></h4>
+          <p>This method accepts a <a href="#a_markerobject">markerOptions</a>
+            object and will dynamically add a new marker to the map.&nbsp; <a href="file:///nfs/ubuntu/cms_dev/modules/CGGoogleMaps2/docs/tests/test3.html">Test3</a>
+            illustrates example usage of this method.&nbsp; View the page source
+            to see how it is used.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <pre style=" margin-left: 40px;"><code>var marker_opts = {
+   <span style="font-family: arial,helvetica,clean,sans-serif;"> </span>name: 'test',
+    position:&nbsp; [ '-41.21212', '-112.12345' ],
+    title: 'Sample Marker',
+    description:&nbsp; 'This is a sample marker, with a larger description',
+};
+$('<span style="color: #33ccff;">#map</span>').cggm2('<span style="color: #ff9900;">addMarker</span>',marker_opts);</code></pre>
+          <h4><a id="am_getmarker">getMarker:</a></h4>
+          <p>This method returns the google maps Marker object for the requested
+            marker&nbsp; If the named marker cannot be found, false is
+            returned.&nbsp; <a href="file:///nfs/ubuntu/cms_dev/modules/CGGoogleMaps2/docs/tests/test3.html">Test3</a>
+            illustrates example usage of this method.&nbsp; View the page source
+            to see how it is used.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <pre style=" margin-left: 40px;"><code><span>var marker = $('<span style="color: #33ccff;">#map</span>').cggm2('<span
+style="color: #ff9900;">getMarker</span>','test');</span></code></pre>
+          <h4><a id="am_getmarkerlist">getMarkerList:</a></h4>
+          <p>This method returns an array of known marker names.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <p style="margin-left: 40px;"><code>var marker_names = $('<span style="color: #33ccff;">#map</span>').cggm2('<span
+                style="color: #ff9900;">getMarkerList</span>');</code></p>
+          <h4><a id="am_removemarker">removeMarker<span style="font-family: monospace;"><span
+                  style="font-family: arial,helvetica,clean,sans-serif;">:</span></span></a></h4>
+          <p>This method will remove the named marker from the map.&nbsp; <a href="file:///nfs/ubuntu/cms_dev/modules/CGGoogleMaps2/docs/tests/test3.html">Test3</a>
+            illustrates example usage of this method.&nbsp; View the page source
+            to see how it is used.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <pre style=" margin-left: 40px;"><code>$('<span style="color: #33ccff;">#map</span>').cggm2('<span
+style="color: #ff9900;">removeMarker</span>','test');</code></pre>
+          <h4><a id="am_removeallmarkers">removeAllMarkers:</a></h4>
+          <p>This method will remove all markers from the map.&nbsp; Markers
+            will then need to be added back with the <a href="#am_addmarker">addMarker</a>
+            method.&nbsp; <a href="tests/test3.html">Test3</a> illustrates
+            example usage of this method.&nbsp; View the page source to see how
+            it is used.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <p style="margin-left: 40px;">$('<span style="color: #33ccff;">#map</span>').cggm2('<span
+              style="color: #ff9900;">removeAllMarkers</span>');</p>
+          <h4><a id="am_getdirections">getDirections:</a></h4>
+          This method is used to retrieve and display route information
+          (directions) between two markers (by name).&nbsp; In order to use this
+          functionality, the <a href="#ao_directions">directions</a> option
+          must be enabled.&nbsp; Then, depending upon other settings, and
+          parameters passed in this method will perform differently:<br>
+          <ul>
+            <li>If <a href="#ao_directions_draw">directions_draw</a> is
+              enabled, and the directions service can successfully calculate a
+              route, then the route will be displayed on the map.</li>
+            <li>if a proper value for <a href="#ao_directions_panel">directions_panel</a>
+              is provided, the directions will be rendered in textual form in
+              the panel specified.</li>
+            <li>if a callback is provided on the call to getDirections, then the
+              google.maps.DirectionsResults object will be passed to the
+              callback</li>
+            <li><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;">The
+                  special location name __MYLOCATION__ can be used when the <a
+                    href="#ao_sensor">sensor</a> option has been enabled to
+                  indicate the users current location.</span></span></li>
+          </ul>
+          <span style=" font-family: monospace;"><span style=" font-family: arial,helvetica,clean,sans-serif;">The
+              <a href="tests/test6.html">Test6</a> sample page illustrates the
+              use of the directions functionality.<br>
+              <br>
+            </span></span>
+          <div style="margin-left: 40px;">usage:<br>
+            <pre><code><span><span style="font-family: arial,helvetica,clean,sans-serif;"></span>var<span
+style="font-family: arial,helvetica,clean,sans-serif;"> points = [ '__MYLOCATION__', 'home' ];<br>$('<span
+style="color: #33ccff;">#map</span>').cggm2('<span style="color: #ff9900;">getDirections</span>',points[,callback]);<br></span></span></code></pre>
+          </div>
+          <h4><a id="am_pantomarker">panToMarker:</a></h4>
+          <p>This method will scroll the map to the specified off screen
+            marker.&nbsp; The zoom level will not be adjusted.&nbsp; You can see
+            an example of the usage of this method in the <a href="tests/test3.html">Test3</a>
+            example.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <p style="margin-left: 40px;">$('<span style="color: #33ccff;">#map</span>').cggm2('<span
+              style="color: #ff9900;">panToMarker</span>','test');</p>
+          <h4><a id="am_showinfowindow">showInfoWindow<span style="text-decoration: underline;">:</span></a></h4>
+          <p>This method will scroll the map to the specified marker (by name)
+            and will display the infowindow for that marker.&nbsp; This method
+            will only work if the marker specified exists, and there is a
+            description or bubbletext for the marker.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <p style="margin-left: 40px;">$('<span style="color: #33ccff;">#map</span>').cggm2('<span
+              style="color: #ff9900;">showInfoWindow</span>','test');</p>
+          <h4><a id="am_refresh">refresh:</a></h4>
+          <p>This method forces a resize event on the map element, and forces
+            the zoom to be adjusted to fit all of the markers.&nbsp; (similar to
+            zoom_encompass) however it does not enable zoom_encompass
+            automatically.&nbsp; This method can be used to force the map to
+            re-draw.</p>
+          <p style="margin-left: 40px;">usage:</p>
+          <pre style=" margin-left: 40px;">$('<span style="color: #33ccff;">#map</span>').cggm2('<span
+style="color: #ff9900;">refresh</span>');</pre>
+          <h4><a id="am_removeallkmllayers">removeAllKmlLayers</a></h4>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h4><a id="am_addkmllayer">addKmlLayer</a></h4>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h4><a id="am_addicon">addIcon</a></h4>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h2 style="height: 20px;"><a id="a_options">Options:</a></h2>
+          <h3><a id="ao_center">center:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>:&nbsp; position</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;
+            Optionally, specify the default center of the map on initial
+            display.&nbsp; This option may be overridden by the <a href="#ao_sensor_center">sensor_center</a>
+            option (if sensor is enabled, and information is available).</p>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">example</span>:</p>
+          <pre style="margin-left: 40px;"><code>var opts = {
+    <span style="color: #ff9900;">center</span>: [ '51.1234', '-110.1234' ],
+    zoom:&nbsp; 8
+};</code></pre>
+          <h3><a id="ao_default_icon">default_icon:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>:&nbsp; The
+            first icon in the icons list</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; The
+            default icon to use for markers where an icon is not explicitly
+            specified. The icon name must match one of the items specified in
+            the <a href="#ao_icons">icons</a> array.</p>
+          <h3><a id="ao_directions">directions:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>:&nbsp; true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;
+            Indicates whether or not direction functionality is enabled.</p>
+          <h3><a id="ao_directions_draw">directions_draw:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;
+            Indicates whether directions should be drawn on the<span style="font-weight: bold;">
+            </span>map.</p>
+          <h3><a id="ao_directions_panel">directions_panel</a>:</h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string or node</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: none</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: Refers to
+            the jquery selector or the node of a &lt;div&gt; that will be used
+            to render the textual form of the directions (if any).</p>
+          <p style="margin-left: 40px;"><strong>example</strong>:</p>
+          <pre style="margin-left: 40px;"><code>var opts = {<br>    directions: 1,<br>    <span
+style="color: #ff9900;">directions_panel</span>: '#directions',<br>    directions_draw: 1,<br>    zoom:&nbsp; 8
+};</code></pre>
+          <h3><a id="ao_directions_units">directions_units:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: metric</p>
+          <p style="margin-left: 40px;"><strong>options</strong>: metric |
+            imperial</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; Used
+            when displaying or calculating directions this determines the units
+            used for calculations.</p>
+          <h3><a id="ao_icons">icons:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>:&nbsp; array of <a
+              href="#a_iconobject">icon objects</a></p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option is used to define the icons that will be used to display
+            markers on the map.&nbsp; If no icons are defined, google will use a
+            standard icon for all markers.</p>
+          <h3><a id="ao_idle_cb">idle_cb:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>:&nbsp; function</p>
+          <p style="margin-left: 40px;"><strong>function arguments</strong>:&nbsp;
+            The callback method accepts an instance of the cggm2 plugin as its
+            only argument.</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: none</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            callback is used to add functionality for when the map is idle (no
+            user interaction).&nbsp; It can be used to add additional dynamic
+            functionality to the map.</p>
+          <p style="margin-left: 40px;"><strong>example:</strong></p>
+          <pre style="margin-left: 40px;"><code>var opts = {
+  <span style="color: #ff9900;">init_cb</span>: function(cggm2) {
+    // an example to hide a busy icon when the map is done doing its thing
+    $('#loading').hide();
+  }
+};
+</code></pre>
+          <h3><a id="ao_infowindow">infowindow<span style="font-family: monospace;">:</span></a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;
+            Toggles infowindow functionality for the entire map.&nbsp; Note,
+            individual markers still need a description or bubbletext defined.</p>
+          <h3><a id="ao_infowindow_boxclass">infowindow_boxClass:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'infoBox'</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; The
+            CSS class name to use for the infowindow</p>
+          <h3><a id="ao_infowindow_trigger">infowindow_trigger:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'click'</p>
+          <p style="margin-left: 40px;"><strong>options</strong>: 'click' |
+            'mouseover'</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;
+            Determine the event (click or mouseover) that will trigger the
+            display of the infowindow</p>
+          <h3><a id="ao_infowindow_cb">infowindow_cb:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: function</p>
+          <p style="margin-left: 40px;"><strong>function arguments</strong>:
+            none</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; A
+            callback function to handle the display of the infowindow</p>
+          <h3><a id="ao_infowindow_content_cb">infowindow_content_cb:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: function</p>
+          <p style="margin-left: 40px;"><strong>function arguments</strong>:&nbsp;
+            cggm2 object reference, marker object reference</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; A
+            callback used to retrieve contents for populating the infowindow</p>
+          <h3><a id="ao_kml">kml:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>:&nbsp; array of <a
+              href="#a_kmlobject">kml objects</a></p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: An array
+            of objects representing the KML layers that should initially be
+            displayed.</p>
+          <p style="margin-left: 40px;"><strong>example</strong>:</p>
+          <pre style="margin-left: 40px;"><code>var <span style="color: #ff9900;">opts</span> = {
+<span style="font-family: arial,helvetica,clean,sans-serif;">  </span>   kml: [
+        { 
+            name: 'layer1',
+            href: 'http://www.website.com/assets/layer1.kml'
+        },
+        {
+            name: 'layer2',
+            href: 'http://www.website.com/assets/layer2.kml'
+        },
+    ]
+};</code></pre>
+          <h3><a id="ao_markers">markers:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: array of <a href="#a_markerobject">MarkerOption
+              objects</a></p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp;&nbsp;
+            An array of objects representing markers that should initially be
+            displayed</p>
+          <p style="margin-left: 40px;"><strong>example</strong>:</p>
+          <pre style="margin-left: 40px;"><code>var opts = {
+<span style="font-family: arial,helvetica,clean,sans-serif;">    </span><span style="color: #ff9900;">markers</span>: [
+    {
+      name: 'marker_1',
+      title: 'Title or tooltip for marker 1',
+      description: 'Extended information for marker 1',
+      icon: 'home',
+      position: [ '-45.1234', '51.1234' ]
+    },
+    {
+      name: 'marker_2',
+      title: 'Title or tooltip for marker 2',
+      description: 'Extended information for marker 2',
+      icon: 'home',
+      position: [ '-51.1234', '45.1234' ]
+    }
+  ]
+}</code></pre>
+          <h3><a id="ao_marker_click_cb">marker_click_cb<span style="font-family: monospace;">:</span></a></h3>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h3><a id="ao_marker_mouseover_cb">marker_mouseover_cb</a></h3>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h3><a id="ao_marker_mouseout_cb">marker_mouseout_cb</a></h3>
+          <p style="margin-left: 40px;"><span style="color: red;">todo</span></p>
+          <h3><a id="ao_mylocationstr">mylocationstr:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'My Location'</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option controls the title used for the <a href="#ao_sensor_marker">sensor_marker</a>
+            (if enabled).</p>
+          <h3><a id="ao_nav_controls">nav_control</a><a id="ao_nav_controls">s:</a></h3>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">type</span>:
+            boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag controls wether navigation (panning) controls are displayed on
+            the resulting map.</p>
+          <h3><a id="ao_scale_controls">scale_controls:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag controls the display of scale controls</p>
+          <h3><a id="ao_sensor">sensor:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag indicates whether or not the map will attempt to determine the
+            user's location using embedded GPS or other mechanisms</p>
+          <p style="margin-left: 40px;"><strong>note</strong>:&nbsp; This
+            enables the collection of geolocation data by the browser (each
+            customer may approve, or deny the reading of geolocation data by the
+            browser). </p>
+          <h3><a id="ao_sensor_center">sensor_center:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: false</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag is dependent upon the <a href="#ao_sensor">sensor</a> flag
+            above.&nbsp; If both are enabled, and the customer allows the
+            browser to collect geolocation data then the map will be initially
+            centered at the users location.</p>
+          <h3><a id="ao_sensor_marker">sensor_marker:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: false</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: This flag
+            is dependent on the <a href="#ao_sensor">sensor</a> flag
+            above.&nbsp; If both are enabled, then a marker will be placed at
+            the users current location.</p>
+          <h3><a id="ao_sensor_icon">sensor_icon:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: n/a</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option is dependent upon the <a href="#ao_sensor">sensor</a> flag,
+            and the <a href="#ao_sensor_marker">sensor_marker</a> flags
+            above.&nbsp;&nbsp; This option specifies the name of the icon to use
+            for the sensor marker.&nbsp; The icon name must be one of the icons
+            specified with the <a href="#ao_icons">icons</a> parameter.</p>
+          <h3><a id="ao_sv_controls">sv_controls:</a></h3>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">type</span>:
+            boolean</p>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">default</span>:
+            true</p>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">description</span>:&nbsp;
+            This flag toggles the display of streetview controls on the map.</p>
+          <h3><a id="ao_tooltip">tooltip<span style="text-decoration: underline;"><span
+                  style="color: #0000ee;">:</span></span></a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag toggles the use of the tooltip plugin, as opposed to standard
+            HTML titles for markers.&nbsp; If this flag is enabled, and a marker
+            has a title, then the tooltip plugin will be used for displaying the
+            marker title.</p>
+          <h3><a id="ao_tooltip_Class">tooltip_Class:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'tooltip'</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option is dependent upon the <a href="#ao_tooltip">tooltip</a> flag
+            above.&nbsp; If the tooltip flag is enabled then this option
+            specifies the CSS class name of the element that will contain the
+            tooltip.</p>
+          <h3><a id="ao_type">type:</a></h3>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">type</span>:
+            string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'hybrid'</p>
+          <p style="margin-left: 40px;"><strong>options</strong>: map |
+            satellite | terrain | hybrid</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option defines the initial type of map that is displayed. </p>
+          <h3><a id="ao_type_controls">type_controls:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: This flag
+            defines wether controls to allow changing the map type will be
+            displayed.</p>
+          <h3><a id="ao_type_control_options">type_control_option:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'default'</p>
+          <p style="margin-left: 40px;"><strong>options</strong>: default |
+            dropdown | small | horizontal_bar</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: This
+            option is dependent upon the <a href="#ao_type_controls">type_controls</a>
+            flag above. It defines the style of controls that will be displayed
+            to allow the user to change the map type.</p>
+          <h3><a id="ao_zoomcontrol">zoom:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: integer</p>
+          <p style="margin-left: 40px;"><strong>default</strong>:&nbsp;
+            undefined</p>
+          <p style="margin-left: 40px;"><strong>options</strong>:&nbsp; 1 to 17</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            option defines the initial zoom level of the map.&nbsp; The greater
+            the number the higher the zoom level.&nbsp; This option may be
+            overriden by the <a href="#ao_zoom_encompass">zoom_encompass</a>
+            option below.</p>
+          <h3><a id="ao_zoomcontrol">zoomControl:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: boolean</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: true</p>
+          <p style="margin-left: 40px;"><strong>description</strong>:&nbsp; This
+            flag determines whether controls for zooming in and out will be
+            visible on the map.</p>
+          <h3><a id="ao_zoomcontroloptions">zoomControlOptions:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: string</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: 'default'</p>
+          <p style="margin-left: 40px;"><strong>options</strong>:&nbsp; default
+            | large | small</p>
+          <p style="margin-left: 40px;"><span style="font-weight: bold;">description:&nbsp;
+              </span>This option defines the type of zoom controls that will be
+            displayed on the map.&nbsp; This option is dependent upon the <a href="#ao_zoomcontrol">zoomControl</a>
+            option above.</p>
+          <h3><a id="ao_zoom_encompass">zoom_encompass:</a></h3>
+          <p style="margin-left: 40px;"><strong>type</strong>: bool</p>
+          <p style="margin-left: 40px;"><strong>default</strong>: false</p>
+          <p style="margin-left: 40px;"><strong>description</strong>: If this
+            option is enabled, then the original zoom of the map will be
+            adjusted to fit all of the known markers.&nbsp; Similarly, if
+            markers are dynamically added, the zoom will be adjusted so that all
+            markers fit inside the map. Zoom is not adjusted upon removal of
+            markers.</p>
+          <h2><a id="a_events">Events</a></h2>
+          <h2><a id="a_markerobject">The MarkerOptions Object:</a></h2>
+          <h2><a id="a_iconobject">The Icon Object:</a></h2>
+          <h2><a id="a_kmlobject">The KML Object:</a></h2>
+          <h2><a id="a_nearfuture">The Near Future</a></h2>
+          <p>In the near future I will be extending the functionality and
+            behavior of the icon and kml related methods and options.&nbsp; This
+            may result in some backward compatibility issues.</p>
+          <p>Additionally, I intend to add on to the category functionality to
+            allow dynamically displaying markers by categories, etc.</p>
+          <span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span>
+          <h2><a id="a_examples">Examples</a>:</h2>
+          <ol>
+            <li><a target="_blank" href="tests/test1.html">Test1</a> Illustrates
+              basic map creation.&nbsp; view the page source for more
+              information.</li>
+            <li><a href="tests/test2.html">Test2</a> Illustrates creating a map
+              with multiple markers, tooltips, and custom marker icons.</li>
+            <li><span style="font-family: monospace;"><span style="font-family: arial,helvetica,clean,sans-serif;"><a
+                    href="tests/test3.html">Test3</a> Illustrates dynamically
+                  adding and removing markers, panning, and getting and setting
+                  options.</span></span></li>
+            <li><a href="tests/test4.html">Test4</a> <span style=" font-family: monospace;"><span
+                  style=" font-family: arial,helvetica,clean,sans-serif;">Illustrates
+                  creating markers statically (from hidden input elements).</span></span></li>
+            <li><span style="  font-family: monospace;"><span style="  font-family: arial,helvetica,clean,sans-serif;"><a
+                    href="tests/test5.html">Test5</a> is a demo of using the
+                  geolcation (sensor) services.</span></span></li>
+            <li><span style="   font-family: monospace;"><span style="   font-family: arial,helvetica,clean,sans-serif;"><a
+                    href="tests/test6.html">Test6</a> is a demo of using the
+                  directions functionality.<br>
+                </span></span></li>
+          </ol>
+          <h2><span style=" font-family: monospace;"><span style=" font-family: arial,helvetica,clean,sans-serif;"><a
+                  id="a_credits">Credits</a>:</span></span></h2>
+          <p>I would like at this time to give much thanks to the jquery, and
+            jquery-ui development team without which making this plugin would
+            have been much more difficult (I just love jquery, it makes working
+            in javascript almost pleasant).</p>
+          <p>Secondly, the google guys for providing a very extensive, free, and
+            very powerful maps API.&nbsp; </p>
+          <p>Thirdly to the person who created the tooltip class to addon to the
+            google maps api (author unknown, but here is a reference:
+http://medelbou.wordpress.com/2012/02/03/creating-a-tooltip-for-google-maps-javascript-api-v3/)</p>
+          <p>And last, but not least to the author(s) of the infobox library for
+            google maps.&nbsp;&nbsp; (reference:
+http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/docs/reference.html).</p>
+          <ol>
+          </ol>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <hr style="width: 100%; color: black; border-style: solid; margin-left: auto; margin-right: auto;">(c)
+        2014 by Robert Campbell<br>
+        all rights reserved<br>
+        last modified: 2014-08-29</div>
+    </div>
+    
+  </body>
+</html>

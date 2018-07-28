@@ -1,0 +1,68 @@
+<?php
+$lang['address'] = 'Adresa';
+$lang['add_map'] = 'Adauga Harta';
+$lang['add_map_point'] = 'Adauga Punct Harta';
+$lang['add_point_for_map'] = 'Adauga Punct la Harta &quot;%s&quot;';
+$lang['cancel'] = 'Anuleaza';
+$lang['center_lat'] = 'Altitudine Centru';
+$lang['center_lon'] = 'Longitudine Centru';
+$lang['changelog'] = '<ul>
+<li>1.0 - Decembrie, 2007
+  <p>Lansare Initiala</p></ul>
+</ul>';
+$lang['click'] = 'Clic';
+$lang['controls'] = 'Control';
+$lang['controls_size'] = 'Marimea Control';
+$lang['default'] = 'Default';
+$lang['delete_map'] = 'Sterge Harta';
+$lang['delete_map_point'] = 'Sterge Punct Harta';
+$lang['description'] = 'Descriere';
+$lang['directions'] = 'Arata Directii';
+$lang['edit_map'] = 'Editeaza Harta';
+$lang['edit_map_point'] = 'Editeaza Punct Harta';
+$lang['edit_map_points'] = 'Editeaza Puncte Harta';
+$lang['edit_points_for_map'] = 'Editeza Puncte pentru Harta&quot;%s&quot;';
+$lang['error_invalidparams'] = 'Unulu sau mai multi parametri lipsesc sau e invalid';
+$lang['error_noapikey'] = 'Cheia Google Api este goala';
+$lang['error_permissiondenied'] = 'Nu ai permisune sa schimbi aceasta actiune';
+$lang['friendlyname'] = 'Calguys Harti Google';
+$lang['google_api_key'] = 'Cheia Google API';
+$lang['height'] = 'Height';
+$lang['help_param_map'] = 'Specify the ID or map name to use for laying out the google map.  If this parameter is not specified, the default map (if any) is used.';
+$lang['hybrid'] = 'Hybrid';
+$lang['id'] = 'Id';
+$lang['info_address_latlong'] = 'Note: Enter <strong>either</strong> an address <strong>or</strong> a lattitude and longitude.  If both the address and latitude and longitude are specified, latitude and longitude will be given preference.';
+$lang['info_window'] = 'Show Info Window';
+$lang['info_trigger'] = 'Info Window Trigger';
+$lang['large'] = 'Large';
+$lang['latitude'] = 'Latitude';
+$lang['location'] = 'Location';
+$lang['longitude'] = 'Longitude';
+$lang['map'] = 'Map';
+$lang['maps'] = 'Maps';
+$lang['map_name'] = 'Map Name';
+$lang['moddescription'] = 'A simple module for creating google maps';
+$lang['mouseover'] = 'MouseOver';
+$lang['name'] = 'Name';
+$lang['points'] = 'Points';
+$lang['point_name'] = 'Point Name';
+$lang['postinstall'] = 'The CGGoogleMaps module has been installed';
+$lang['postuninstall'] = 'The CGGoogleMaps module and all relevant data has been removed';
+$lang['preferences'] = 'Preferences';
+$lang['really_uninstall'] = 'Are you sure you really want to remove this module?';
+$lang['satellite'] = 'Satellite';
+$lang['set_dflt_map'] = 'Set Map As Default';
+$lang['sidebar'] = 'Show Sidebar';
+$lang['small'] = 'Small';
+$lang['submit'] = 'Submit';
+$lang['text'] = 'Text';
+$lang['type'] = 'Type';
+$lang['type_controls'] = 'Show Type Controls';
+$lang['width'] = 'Width';
+$lang['zoom'] = 'Zoom Level';
+$lang['zoom_encompass'] = 'Zoom Encompass';
+$lang['utma'] = '156861353.1089356022.1202487090.1204104550.1204893800.5';
+$lang['utmz'] = '156861353.1204104550.4.4.utmccn=(referral)|utmcsr=cmsmadesimple.org|utmcct=/main/support/IRC|utmcmd=referral';
+$lang['utmb'] = '156861353';
+$lang['utmc'] = '156861353';
+?>

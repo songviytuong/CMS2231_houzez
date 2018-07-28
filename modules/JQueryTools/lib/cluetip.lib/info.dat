@@ -1,0 +1,6 @@
+<?php
+$info['js'] = array('lib/jquery.hoverIntent.js','lib/jquery.bgiframe.min.js','jquery.cluetip.min.js');
+$info['css'] = 'jquery.cluetip.css';
+$info['depends'] = 'jquery';
+$info['js_nominify'] = 1;
+?>

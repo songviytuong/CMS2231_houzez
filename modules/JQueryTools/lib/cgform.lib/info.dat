@@ -1,0 +1,4 @@
+<?php
+$info['js'] = 'jquery.cgform.js';
+$info['depends'] = 'jquery';
+?>

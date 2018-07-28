@@ -1,0 +1,26 @@
+Field Validators
+ - Bot detection (optional)
+
+Dispositions
+  - Store response in session (can be done in a UDT via any disposition that uses a template)
+  - File dispositions
+    - Ability to specify file extensions
+
+Validate via ajax
+  * Validate via ajax (FormData plugin) do not allow dispositions to run *
+  * return json data with field name, and error message... allows javascript to hilight bad fields *
+  * as a smarty plugin like {cgbf_presubmit_validate}
+
+{cgbf_set_response_value field=xxxx value=xxxx} for use in validations and disposition templates.
+
+Language strings (particularly for exceptions)
+Some way of cleaning up uploaded files
+API Documentation
+Usage Documentation
+!!! Handle scanning of smarty template via a frontend request ??
+   - perhaps set a session variable, then render the page (non-inline) or use showtemplate=false inline... and gather the output.
+   - pass a render=GUID param, compare it to a session variable... if the test passes then we just get the rendered HTML
+   * Need a PAGE id
+
+FormResponse::to_json
+// json encode the response for use in javascript.

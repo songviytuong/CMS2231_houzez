@@ -1,0 +1,12 @@
+- Build your form in HTML and javascript, style with CSS easily
+- You control input field names 
+- Works with smarty
+- Secure
+  - Supports captcha
+  - Built in honeypot captcha
+- Provides syntax checking and basic error checking of your forms HTML
+- Supports file uploads
+- Flexible and extendable validations
+- Flexible and extendable dispositions
+- Extendable
+- Full API

@@ -1,0 +1,503 @@
+<ul>
+<li>Version 1.0 - December, 2007
+   <p>Initial Release</p>
+</li>
+<li>Version 1.0.1 - January, 2008
+   <ul>
+     <li>Adds pagination in summary view</li>
+     <li>Fixes a problem with duplicate links in summary view</li>
+   </ul>
+</li>
+<li>Version 2.0 - April, 2008
+  <ul>
+     <li>Adds hierarchical categories as well as the original 'tag' based categories.<br/>
+         Hierarchical categories can have an image as well as a description.</li>
+     <li>Adds more custom field types (image, dropdown)<br/>
+         Including thumbnail generation.</li>
+     <li>Remove the original image fields</li>
+     <li>Adds Search module capability</li>
+     <li>Adds a hierarchical category view with drill down support</li>
+     <li>Much, much more</li>
+  </ul>
+</li>
+<li>Version 2.0.1 - April, 2008
+  <ul>
+     <li>Fixes numerous small errors.</li>
+     <li>Fix to allow spaces and other characters in hierarchy names</li>
+  </ul>
+</li>
+<li>Version 2.0.2 - August, 2008
+  <ul>
+     <li>Bug fixes</li>
+     <li>Now Require CGExtensions 1.9</li>
+     <li>Add a currency code preference</li>
+  </ul>
+</li>
+<li>Version 2.1.1 - September, 2008
+  <ul>
+     <li>Bug fixes</li>
+     <li>Add the ability to associate static data with any category</li>
+     <li>Add the ability to copy categories</li>
+     <li>Add the optional ability to watermark uploaded abilities.</li>
+     <li>Add the optional ability to change the location of the watermark in uploaded images.</li>
+  </ul>
+</li>
+<li>Version 2.1.2 - September, 2008
+  <ul>
+    <li>Update dependencies, and remove debug statements.</li>
+  </ul>
+</li>
+<li>Version 2.1.3 - September, 2008
+  <ul>
+    <li>Minor Bugfixes</li>
+    <li>Change the delimiter on the attributes dropdown</li>
+  </ul>
+</li>
+<li>Version 2.2 - December, 2008
+  <ul>
+    <li>Numerous Bugfixes</li>
+    <li>Products module now has a Cart module preference, where you can pick from the available cart modules.</li>
+    <li>Modify default templates so that the cart module preference is used.</li>
+    <li>Remove all references to taxes or shipping modules.</li>
+  </ul>
+</li>
+<li>Version 2.2.1 - January, 2008
+  <ul>
+    <li>Add ability to sort by weight.</li>
+    <li>Add breadcrumbs to detail view.</li>
+    <li>Add category information to summary view.</li>
+  </ul>
+</li>
+<li>Version 2.2.2 - January, 2008
+  <ul>
+    <li>Fix minor problem with category information in summary view.</li>
+    <li>Add consistent ordering to GetCategoriesForProduct</li>
+  </ul>
+</li>
+<li>Version 2.2.4 - February, 2008
+  <ul>
+    <li>Add ID to the hierarchy tab</li>
+    <li>Add the {$parent} variable to the hierarchy display.</li>
+  </ul>
+</li>
+<li>Version 2.3 - March, 2008
+  <ul>
+    <li>Add CSV Import</li>
+    <li>Add indexes to the tables, should result in a massive performance improvement.</li>
+    <li>Add Extra1 and Extra2 fields to the hierarchy definition.</li>
+    <li>Fixes problems with dates
+  </ul>
+</li>
+<li>Version 2.3.1 - March, 2008
+  <ul>
+    <li>Fixes to CSV Import</li>
+    <li>Bump minimum CMS Version to 1.5.3</li>
+    <li>Bugfixes to edit attribute set.</li>
+  </ul>
+</li>
+<li>Version 2.4 - July, 2008
+  <ul>
+    <li>Fixes Edit Attribute Set Problem</li>
+    <li>Adds GetCategory() method.</li>
+    <li>Minor bug fixes.</li>
+  </ul>
+</li>
+<li>Version 2.4.2 - July, 2008
+  <ul>
+    <li>Adds convenience functions for use by the Promotions and other modules.</li>
+    <li>Fixes minor bugs.</li>
+  </ul>
+</li>
+<li>Version 2.4.4 - September, 2008
+  <ul>
+    <li>Fixes minor bugs.</li>
+  </ul>
+</li>
+<li>Version 2.4.5 - November, 2008
+  <ul>
+    <li>Minor smarty improvements.</li>
+  </ul>
+</li>
+<li>Version 2.4.7 - December, 2008
+  <ul>
+    <li>Adds ability to specify a template for product attribute value display in the dropdowns.</li>
+    <li>Adds the showall parameter (optional) to the categorylist action.</li>
+  </ul>
+</li>
+<li>Version 2.4.8 - January, 2009
+  <ul>
+    <li>Adds handling for direct access to disabled/deleted/invalid product detail views.</li>
+  </ul>
+</li>
+<li>Version 2.5.1 - February, 2010
+  <ul>
+    <li>Improvements for MAC format ASCII csv files.</li>
+    <li>Adds product alias mechanism.</li>
+    <li>Adds breadcrumb support into the detail view.</li>
+    <li>Adds pretty url support into the search results.</li>
+    <li>Adds canonical support into the detail view.</li>
+    <li>Adds SKU support.</li>
+    <li>Bug fixes.</li>
+  </ul>
+</li>
+<li>Version 2.6 - March, 2019
+ <ul>
+   <li>Modifications to work with new E-commerce setup.</li>
+   <li>Many bug fixes.</li>
+ </ul>
+</li>
+<li>Version 2.6.1 - April, 2019
+ <ul>
+   <li>Bug Fixes.</li>
+ </ul>
+</li>
+<li>Version 2.6.2 - April, 2019
+ <ul>
+   <li>Bug Fixes.</li>
+ </ul>
+</li>
+<li>Version 2.7 - April, 2019
+ <ul>
+   <li>Adds the ability to sort summary views by custom fields.</li>
+   <li>Adds the fieldlist action to allow creating navigations on custom fields.</li>
+   <li>Adds search action to allow searching products.</li>
+   <li>Remove currency code and other preferences that are now in CGEcommerceBase... well if CGEcommerceBase is installed anyways.</li>
+   <li>Remove some preferences and templates that are now hosted in CGEcommerceBase.</li>
+ </ul>
+</li>
+<li>Version 2.7.1 - April, 2010
+ <ul>
+   <li>Adds a return link to the category fields edit page.</li>
+   <li>Adds a detail_url param to the category list view.</li>
+   <li>Adds the categorylistdtltemplate param.</li>
+   <li>Category List view now uses the resultpage parameter by default.</li>
+   <li>Fixes a problem with deleting files in the edit product page.</li>
+ </ul>
+</li>
+<li>Version 2.7.3 - April, 2010
+ <ul>
+   <li>Remove the image when removing the hierarchy item.</li>
+   <li>Improvements to category field ordering.</li>
+   <li>Adds the ability to rename category fields.</li>
+   <li>Minor bug fixes.</li>
+ </ul>
+</li>
+<li>Version 2.7.4 - April, 2010
+ <ul>
+   <li>Minor bug fixes.</li>
+ </ul>
+</li>
+<li>Version 2.7.5 - May, 2010
+ <ul>
+   <li>Fixes problem with search templates on upgrade.</li>
+   <li>Adds category field reordering.</li>
+ </ul>
+</li>
+<li>Version 2.7.6 - May, 2010
+ <ul>
+   <li>Fixes to category field re-ordering.</li>
+ </ul>
+</li>
+<li>Version 2.8 - May, 2010
+ <ul>
+   <li>Adds a true hierarchy mode.<br/>
+       <strong>Note:</strong> This will break existing sites using the older hierarchy view.  You should read the help for information as to how to use the new view.</li>
+   <li>Adds the ability to add custom fields to the admin side product table view.</li>
+   <li>Improves the CSV import function.</li>
+   <li>Adds a new dimension data field.</li
+ </ul>
+</li>
+<li>Version 2.8.1 - May, 2010
+ <ul>
+   <li>Minor bug fixes to admin display.</li>
+ </ul>
+</li>
+<li>Version 2.8.2 - May, 2010
+ <ul>
+   <li>Fix to default hierarchy template.</li>
+ </ul>
+</li>
+<li>Version 2.8.2 - May, 2010
+ <ul>
+    <li>Adds subscription field type.</li>
+    <li>Minor bug fixes.</li>
+    <li>Added support for fieldval='::notnull::' on the summary view.</li>
+ </ul>
+</li>
+<li>Version 2.8.3 - July, 2010
+ <ul>
+    <li>Removes the useoldhierarchy param from the hierarchy view.</li>
+    <li>Adds the ability to filter the output in the categorylist view.</li>
+    <li>Minor bug fixes.</li>
+ </ul>
+</li>
+<li>Version 2.8.4 - September, 2010
+ <ul>
+    <li>Adds a preference for the default page limit in summary mode.</li>
+ </ul>
+</li>
+<li>Version 2.8.5 - September, 2010
+ <ul>
+    <li>Adds sorting capabilities to the categorylist view.</li>
+    <li>Re-works the hierarchy view (again).  Templates will need to change.</li>
+    <li>Adds the ability to explicitly list hierarchy items in the hierarchy view.</li>
+    <li>Adds comma separated hierarchy capability to the default summary view.</li>
+ </ul>
+</li>
+<li>Version 2.8.6 - September, 2010
+ <ul>
+   <li>Fixes to CSV import stuff.</li>
+ </ul>
+</li>
+<li>Version 2.9 - December, 2010
+ <ul>
+   <li>Fixes some issues related to E_STRICT and E_DEPRECATED</li>
+   <li>Adds the ability to copy attribute sets from another product.</li>
+   <li>Fixes to CSV import stuff.</li>
+   <li>Fixes to entering a sku in attributes.</li>
+   <li>Adds hierarchy information to search, summary and detail views.</li>
+   <li>Fixes an issue with pagination in the admin panel products tab.</li>
+   <li>Fixes an issue with page counts in the products tab when a custom field is added to the view list.</li>
+   <li>Many more bug fixes and minor improvements.</li>
+ </ul>
+</li>
+<li>Version 2.10.2 - January, 2011
+ <ul>
+   <li>Adds canonical URL to the hierarchy item, in the hierarchy view.</li>
+   <li>Adds the productlist parameter to output a summary view of specific products.  Does not provide pagination or sorting.</li>
+ </ul>
+</li>
+<li>Version 2.10.3 - February, 2011
+ <ul>
+   <li>Fixes bug with default view.... thanks stikki</li>
+ </ul>
+</li>
+<li>Version 2.10.4 - May, 2011
+ <ul>
+   <li>Minor fix to the uninstaller.</li>
+   <li>Adds the categoryfield parameter to the categorylist action.</li>
+   <li>Fixes a problem with category fields when copying a category.</li>
+ </ul>
+</li>
+<li>Version 2.10.5 - May, 2011
+ <ul>
+   <li>Minores fix to cateogry fields.</li>
+ </ul>
+</li>
+<li>Version 2.11 - May, 2011
+  <ul>
+    <li>Adds the &quot;excludecat&quot; parameter.</li>
+    <li>Removes some errant debug statements in the categorylist view.</li>
+  </ul>
+</li>
+<li>Version 2.12 - May, 2011
+  <ul>
+    <li>There is now an option to make sure that the SKU is required when adding/editing products/attributes.</li>
+    <li>The image thumbnail, preview, and watermarking stuff is now DEPRECATED.</li>
+    <li>Added the attribs_full stuff into the detail and summary views.   the attributes member of output objects is deprecated.</li>
+  </ul>
+</li>
+<li>Version 2.12.1 - May, 2011
+  <ul>
+    <li>Adds caching for field definitions.</li>
+  </ul>
+</li>
+<li>Version 2.13 - July, 2011
+  <ul>
+   <li>Adds bulk actions in the product list.</li>
+   <li>Adds the ability to exclude products in certain categories from the product list.</li>
+   <li>Numerous minor bug fixes.</li>
+  </ul>
+</li>
+<li>Version 2.13.1 - July, 2011
+  <ul>
+   <li>Bug Fixes.</li>
+  </ul>
+</li>
+<li>Version 2.13.2 - July, 2011
+  <ul>
+   <li>Bug Fixes.</li>
+  </ul>
+</li>
+<li>Version 2.13.3 - August, 2011
+  <ul>
+   <li>Bug Fixes.</li>
+  </ul>
+</li>
+<li>Version 2.14 - August, 2011
+  <ul>
+   <li>Adds functionality for dynamically reorganizing the hierarchy tree.</li>
+  </ul>
+</li>
+<li>Version 2.15 - August, 2011
+  <ul>
+    <li>Adds a simple quantity-on-hand field.</li>
+  </ul>
+</li>
+<li>Version 2.16 - August, 2011
+  <ul>
+    <li>Vastly improved search capabilities.  Note: existing templates will need to be updated as field names have changed.</li>
+  </ul>
+</li>
+<li>Version 2.17 - March, 2012
+  <ul>
+    <li>Numerous bug fixes.</li>
+    <li>Adds the ability to duplicate a product.</li>
+  </ul>
+</li>
+<li>Version 2.18.2 - June, 2012
+  <ul>
+    <li>Creates a new flexible query class and matching resultset class.</li>
+    <li>Dramatic performance improvment for summary views.</li>
+    <li>Adds the ability to export product information to csv.</li>
+    <li>Many improvements to CSV import.</li>
+    <li>Adds an optional new default action which should be much faster.  Original default action will be removed over time.</li>
+    <li>Help is now in its own file.</li>
+    <li>Add the 'parents' parameter to the hierarchy action.</li>
+    <li>Numerous caching optimizations.</li>
+    <li>More indexes on the products table during install.</li>
+    <li>Language change... in most places, products are now referred to as &quot;items&quot;</li>
+  </ul>
+</li>
+<li>Version 2.18.3 - July, 2012
+  <ul>
+    <li>Minor Fixes.</li>
+  </ul>
+</li>
+<li>Version 2.19.x - December, 2012
+  <p><strong>NOTE: COMPATIBILITY BROKEN.  SOME CHANGES REQUIRED.</strong></p>
+  <p><strong>NOTE: PHP 5.3.x IS REQUIRED.</strong></p>
+  <ul>
+    <li>Removes the entire attribute mechanism and replaces it with a flat list of options.
+      <p>This means that shops using the attributes will need to adjust their products because instead of having multiple &quot;attributes&quot; there is now one flat list of options with a simple text field to describe them.</p>
+      <p>Additionally, summary and detail templates where attributes were displayed will need adjustment.</p>
+    </li>
+    <li>SKUs are now required by default (as they are needed for the Cart2 module)</li>
+    <li>Numerous bug fixes.</li>
+  </ul>
+</li>
+<li>Version 2.20 - October, 2013
+  <ul>
+    <li>Refactor the search action
+      <ul>
+        <li>Improved ability to search on custom fields</li>
+        <li>Improved ability to specify search behavior in the search template, as opposed to the Products Tag.</li>
+        <li>Fixes pagination links.</li>
+        <li>Improved documentation in the prototype search form template.</li>
+        <li>Now uses the same classes used for generating summary views.... with the same optimizations.</li>
+      </ul>
+    </li>
+    <li>New companydirectory field type allowing linking a product to a company.  Uses an ajaxy autocomplete mechanism for finding Companies.</li>
+    <li>Improved admin filtering
+      <ul>
+        <li>Filter on SKU or product name</li>
+        <li>Adds ability to sort on custom fields numerically.</li>
+        <li>Filter is now stored as a user preference, and page number stored in the session.</li>
+      </ul>
+    </li>
+    <li>Tweaks to CSV Import</li>
+    <li>Numerous minor enhancements</li>
+    <li>A couple new database indexes for performance.</li>
+    <li>Numerous bug fixes.</li>
+    <li>More...</li>
+  </ul>
+</li>
+<li>Version 2.21.x
+  <ul>
+    <li>Adds ordering to the product options.</li>
+    <li>Rewrote the product options dialog.</li>
+  </ul>
+</li>
+<li>Version 2.22.x
+  <ul>
+    <li>Rework the hierarchy action again... now support showing items from child categories <strong>by default</strong>.
+      <p><strong>This is a change in behavior:</strong> you may need to adjust your websites.</p>
+      <p>This means that the action=hierarchy will now generate links to summary views that will show the products of that hierarchy, and its children.</p>
+      <p>To restore the old behavior the nochildren=1 parameter was added.  However, the URLS generated when nochildren=1 is added to the tag will not be pretty.</p>
+    </li>
+    <li>Improvements to ASCII importing:
+      <p>Now supports importing product options properly.</p>
+      <p>Now support importing categories with the delimiter in its name.</p>
+    </li>
+    <li>begin removing deprecated functions and functionality.</li>
+    <li>Improvements to the orderupdated event wrt updating quantity on hand.</li>
+  </ul>
+</li>>
+
+   <li>Version 2.23.x
+     <div class="information"><strong>WARNING:</strong> The products module will no longer generate preview and thumbnail images on image upload.  Use CGSmartImage for this purpose.
+       Though there is still some code to work with preview and thumb images if they already exist.  This functionality will be removed at a later date.</div>
+     <ul>
+   </li>
+
+   <li>Version 2.24
+     <ul>
+       <li>Add URL slug functionality like what CGBlog and News Have.</li>
+       <li>Code cleanup and template fixes.</li>
+       <li>Rework (again) the hierarchy view.</li>
+       <li>Numerous bug fixes.</li>
+     </ul>
+   </li>
+
+   <li>Version 2.25
+     <br/>
+     <p class="warning"><strong>Warning:</strong> This is the last version of this module for CMSMS 1.x.  All subsequent releases will require CMSMS 2.x and will integrate with the Design Manager.</p>
+     <ul>
+       <li>Adds a new bulk action for adjustng stock levels.</li>
+     </ul>
+   </li>
+
+   <li>Version 2.26
+     <div class="warning"><h4>Warning:</h4>
+       <p>This version now uses DesignManager to manage all frontend view templates.  Though the template contents have not changed, in order to ensure that template names are unique the names may have been altered during the conversion process.   You may need to modify the locations where you specify alternate templates to reflect the new template names.</p>
+       <p>This is a major revision.  Though testing has been performed, and data structure changes are minimal, please do extensive testing.</p>
+     </div>
+     <ul>
+       <li>Now requires CMSMS 2.1.6 or later.</li>
+       <li>Adds an owner_id field and an ability to set an owner</li>
+       <li>Numerous bug fixes.</li>
+       <li>Adds an option for FEU owner group to the preferences tab.</li>
+       <li>Now stores all but email templates in DesignManager, allows getting rid of alot of code.</li>
+       <li>Now works with the AdminSearch module.</li>
+       <li>Refactoring of all query, storage, and display classes.</li>
+       <li>Refactory the add and edit product forms.</li>
+       <li>Remove all traces of image processing.</li>
+       <li>re-factor numerous admin forms and displays to be smaller, cleaner, and more efficient.</li>
+       <li>field definitions can now be re-ordered via drag/drop.</li>
+       <li>more...</li>
+     </ul>
+   </li>
+
+   <li>Version 2.27.x
+     <ul>
+       <li>Now begins to use hooks.</li>
+       <li>Now requires CMSMS 2.2.2 or later.</li>
+       <li>Rewrite bulk action functionality.</li>
+       <li>Adds a new linked file field type.</li>
+       <li>Adds a new simple album interface using the {cms_filepicker}</li>
+       <li>Adds {products_gethierarchy} smarty plugin.</li>
+       <li>Improvements to CSV export and import.</li>
+       <li>Minor fixes.</li>
+     </ul>
+   </li>
+
+   <li>Version 2.28
+     <ul>
+       <li>Each item can now identify itself as a service or a product.  This is useful for tax purposes.</li>
+       <li>Tweaks to the editproduct form wrt. subscription fields and dimension fields.</li>
+       <li><strong>Note:</strong> Subscription fields are currently not functioning.</li>
+     </ul>
+   </li>
+
+   <li>Version 2.28.1
+     <ul>
+       <li>Fix summary pagination.</li>
+     </ul>
+   </li>
+
+   <li>Version 2.28.3
+     <ul>
+       <li>Minor template fixes and other corrections.</li>
+     </ul>
+   </li>
+</ul>

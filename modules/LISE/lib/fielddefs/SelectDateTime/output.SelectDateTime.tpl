@@ -1,0 +1,1 @@
+{$fielddef.name}: {$fielddef.value|cms_date_format}

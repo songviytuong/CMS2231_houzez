@@ -1,0 +1,4 @@
+<?php
+$info['js'] = array('jquery-1.11.3.min.js','jquery-migrate-1.2.1.min.js');
+$info['js_nominify'] = 1;
+?>

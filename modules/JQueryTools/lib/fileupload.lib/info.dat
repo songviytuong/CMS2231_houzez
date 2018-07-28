@@ -1,0 +1,4 @@
+<?php
+$info['js'] = array('js/jquery.iframe-transport.js','js/jquery.fileupload.js');
+$info['depends'] = array('jquery','ui');
+?>

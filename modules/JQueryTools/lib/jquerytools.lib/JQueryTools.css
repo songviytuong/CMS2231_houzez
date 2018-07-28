@@ -1,0 +1,20 @@
+/*********************************** tablesorter ****************/
+
+table.tablesorter thead tr .header {
+        background-image: url(../imgs/bg.gif);
+        background-repeat: no-repeat;
+        background-position: center left;
+        cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+  background-color: #777;
+/*  background-image: url(../imgs/asc.gif); */
+}
+
+table.tablesorter thead tr .headerSortDown {
+  background-color: #777;
+/*  background-image: url(../imgs/desc.gif); */
+}
+
+/*********************************** next css tool ****************/

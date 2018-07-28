@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CGGM2 Map Test 4</title>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+  <script src="//maps.google.com/maps/api/js?libraries=geometry&amp;sensor=true"></script>
+  <script src="../../lib/js/infobox_packed.js"></script>
+  <script src="../../lib/js/map_tooltip.js"></script>
+  <script src="../../lib/js/jquery.cggm_map.js"></script>
+  <style type="text/css">
+    div.center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div#map {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+    }
+    .infoBox {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid yellow;
+    }
+    .tooltip {
+      padding: 3px;
+      background-color: yellow;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+  $(function() {
+    $('#map').cggm2();
+  });
+  </script>
+</head>
+<body>
+
+  <h1 style="text-align: center;">CGGM2 Map Test 4</h1>
+  <p style="text-align: center;">A simple map, with three markers and icons defined statically.</p>
+  <div id="map" class="center"></div>
+  <div class="cggm2_markers" style="display: none;">
+    <div class="cggm2_marker">
+      <input type="hidden" class="cggm2_marker_name" value="marker_1"/>
+      <input type="hidden" class="cggm2_marker_title" value="Calgary"/>
+      <input type="hidden" class="cggm2_marker_description" value="The Oil and Gas capitol of Canada"/>
+      <input type="hidden" class="cggm2_marker_latitude" value="51.0500">
+      <input type="hidden" class="cggm2_marker_longitude" value="-114.0667">
+    </div>
+
+    <div class="cggm2_marker">
+      <input type="hidden" class="cggm2_marker_name" value="marker_2"/>
+      <input type="hidden" class="cggm2_marker_title" value="Edmonton"/>
+      <input type="hidden" class="cggm2_marker_description" value="The capitol of the province of Alberta"/>
+      <input type="hidden" class="cggm2_marker_latitude" value="53.5333">
+      <input type="hidden" class="cggm2_marker_longitude" value="-113.5000">
+    </div>
+
+    <div class="cggm2_marker">
+      <input type="hidden" class="cggm2_marker_name" value="marker_3"/>
+      <input type="hidden" class="cggm2_marker_title" value="Red Deer"/>
+      <input type="hidden" class="cggm2_marker_description" value="Gas stop between Calgary and Edmonton"/>
+      <input type="hidden" class="cggm2_marker_latitude" value="52.2681">
+      <input type="hidden" class="cggm2_marker_longitude" value="-113.8111">
+    </div>
+
+  </div>
+</body>
+</html>

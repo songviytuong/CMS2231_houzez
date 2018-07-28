@@ -1,0 +1,30 @@
+<?php
+$lang['all'] = 'Alle';
+$lang['desc_css_search'] = 'Suche nach übereinstimmendem Text in Stylesheets';
+$lang['desc_content_search'] = 'Suche nach übereinstimmendem Text in Inhalt-Seiten';
+$lang['desc_filter_all'] = 'Alle filter ausklappen';
+$lang['desc_oldmodtemplate_search'] = 'Durchsuche alte Modulvorlagen';
+$lang['desc_template_search'] = 'Suche nach übereinstimmendem Text in Vorlagen';
+$lang['error_nosearchtext'] = 'Bitte geben Sie einen Suchbegriff ein';
+$lang['error_select_slave'] = 'Sie müssen mindestens eine Filterart auswählen';
+$lang['filter'] = 'Filter';
+$lang['finished'] = 'Beendet';
+$lang['friendlyname'] = 'Admin Suche';
+$lang['lbl_content_search'] = 'Durchsuche Seiten';
+$lang['lbl_css_search'] = 'Durchsuche Stylesheets';
+$lang['lbl_gcb_search'] = 'Durchsuche Globale Inhaltsblöcke';
+$lang['lbl_oldmodtemplate_search'] = 'Durchsuche Modulvorlagen';
+$lang['lbl_search_desc'] = 'Durchsuche Beschreibungen <em>(wo anwendbar)</em>';
+$lang['lbl_template_search'] = 'Durchsuche Vorlagen';
+$lang['moddescription'] = 'Ein Programm, um die Datenbanktabellen mit bestimmten Text zu suchen. Nützlich für die Suche wo bestimmte Stylesheets, Tags oder Module verwendet werden.';
+$lang['placeholder_search_text'] = 'Geben Sie Suchtext ein';
+$lang['postinstall'] = 'Admin-Suchmodul wurde installiert';
+$lang['postuninstall'] = 'Admin-Suchmodul wurde deinstalliert';
+$lang['search'] = 'Suche';
+$lang['search_text'] = 'Suchtext';
+$lang['search_results'] = 'Suchergebnisse';
+$lang['sectiondesc_oldmodtemplates'] = 'Ergebnisse in diesem Abschnitt sind nicht anklickbar, da jedes Modul sein eigenes Administrationsbereich für die Bearbeitung der Vorlagen verwendet';
+$lang['settings'] = 'Einstellungen';
+$lang['starting'] = 'Starte';
+$lang['warn_clickthru'] = 'Dies öffnet ein weiteres Formular. Abbrechen beim diesen Formular bringt Sie nicht zurück auf diese Seite. Ihre Suchergebnisse können verloren gehen.';
+?>

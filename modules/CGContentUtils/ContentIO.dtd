@@ -1,0 +1,17 @@
+<!DOCTYPE cms_content [
+  <!ELEMENT cms_content(name,type,metadata,accesskey,tabindex,menutext,active,alias,cachable,collapsed,showinmenu,property)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT type (#PCDATA)>
+  <!ELEMENT metadata (#PCDATA)>
+  <!ELEMENT accesskey (#PCDATA)>
+  <!ELEMENT tabindex (#PCDATA)>
+  <!ELEMENT menutext (#PCDATA)>
+  <!ELEMENT active (#PCDATA)>
+  <!ELEMENT alias (#PCDATA)>
+  <!ELEMENT cachable (#PCDATA)>
+  <!ELEMENT showinmenu (#PCDATA)>
+  <!ELEMENT property (proptype,propname,propvalue)>
+  <!ELEMENT proptype (#PCDATA)>
+  <!ELEMENT propname (#PCDATA)>
+  <!ELEMENT propvalue (#PCDATA)>
+]>
